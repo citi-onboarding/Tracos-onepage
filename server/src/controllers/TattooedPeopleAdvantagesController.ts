@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
-import { VantagensPessoasTatuadas } from '@models/VantagensPessoasTatuadas';
+import { TattooedPeopleAdvantages } from '@models/TattooedPeopleAdvantages';
 import { Citi, Crud } from '../global'
 
-export default class VantagensPessoasTatuadasController implements Crud {
+export default class TattooedPeopleAdvantagesController implements Crud {
 
     async create(request: Request, response: Response) {
         const { image, title, description } = request.body;
@@ -10,24 +10,24 @@ export default class VantagensPessoasTatuadasController implements Crud {
         const isAnyUndefined = Citi.areValuesUndefined(image, title, description);
         if (isAnyUndefined) return response.status(400).send();
 
-        const newVantagensPessoasTatuadas = { image, title, description };
-        const { httpStatus, message } = await Citi.insertIntoDatabase(VantagensPessoasTatuadas, newVantagensPessoasTatuadas);
+        const newTattooedPeopleAdvantages = { image, title, description };
+        const { httpStatus, message } = await Citi.insertIntoDatabase(TattooedPeopleAdvantages, newTattooedPeopleAdvantages);
 
         return response.status(httpStatus).send({ message });
     }
 
     async get(request: Request, response: Response) {
-        const { httpStatus, values } = await Citi.getAll(VantagensPessoasTatuadas);
+        const { httpStatus, values } = await Citi.getAll(TattooedPeopleAdvantages);
         return response.status(httpStatus).send(values);
     }
 
     async delete(request: Request, response: Response) {
         const { id } = request.params;
-        const { value: vantagensPessoasTatuadasFound, message } = await Citi.findByID(VantagensPessoasTatuadas, id);
+        const { value: tattooedPeopleAdvantagesFound, message } = await Citi.findByID(TattooedPeopleAdvantages, id);
 
-        if (!vantagensPessoasTatuadasFound) return response.status(400).send({ message });
+        if (!tattooedPeopleAdvantagesFound) return response.status(400).send({ message });
 
-        const { httpStatus, messageFromDelete } = await Citi.deleteValue(VantagensPessoasTatuadas, vantagensPessoasTatuadasFound);
+        const { httpStatus, messageFromDelete } = await Citi.deleteValue(TattooedPeopleAdvantages, tattooedPeopleAdvantagesFound);
         return response.status(httpStatus).send({ messageFromDelete });
     }
 
@@ -38,9 +38,9 @@ export default class VantagensPessoasTatuadasController implements Crud {
         const isAnyUndefined = Citi.areValuesUndefined(image, title, description, id);
         if (isAnyUndefined) return response.status(400).send();
 
-        const vantagensPessoasTatuadasWithUpdatedValues = { image, title, description };
+        const tattooedPeopleAdvantagesWithUpdatedValues = { image, title, description };
 
-        const { httpStatus, messageFromUpdate } = await Citi.updateValue(VantagensPessoasTatuadas, id, vantagensPessoasTatuadasWithUpdatedValues);
+        const { httpStatus, messageFromUpdate } = await Citi.updateValue(TattooedPeopleAdvantages, id, tattooedPeopleAdvantagesWithUpdatedValues);
         return response.status(httpStatus).send({ messageFromUpdate });
     }
 
