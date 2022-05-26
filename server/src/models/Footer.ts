@@ -7,7 +7,7 @@ export class Footer{
     id: number
 
     @Column()
-    phone: number
+    phone: string
 
     @Column()
     address: string
