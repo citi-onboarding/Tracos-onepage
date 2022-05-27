@@ -19,5 +19,5 @@ export class Contact {
     referrer: string
 
     @Column()
-    phone: number
+    phone: string
 }
