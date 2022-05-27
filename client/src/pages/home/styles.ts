@@ -11,7 +11,7 @@ export const HomeContainer = styled.div`
   flex-direction: column;
 
   h1 {
-    font-size: 54px;
+    font-size: 55px;
     color: ${(props) => props.theme.colors.primary};
     margin-top: 40px;
     text-align: center;
