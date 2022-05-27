@@ -1,9 +1,11 @@
 import express from 'express';
-import UserController from '@controllers/UserController';
+import UserController from '@controllers/UserController'
+import TattooArtistsAdvantagesController from '@controllers/TattooArtistsAdvantagesController'
 import TattooistsController from '@controllers/TattooistsControllers';
 import FooterController from '@controllers/FooterController';
 import ContactController from '@controllers/ContactController'
 
+const tattooArtistsAdvantagesController = new TattooArtistsAdvantagesController();
 const routes = express.Router();
 const userController = new UserController();
 const tattooistsController = new TattooistsController();
@@ -15,6 +17,10 @@ routes.get('/user', userController.get);
 routes.delete('/user/:id', userController.delete);
 routes.put('/user/:id', userController.update);
 
+routes.post('/tattooArtistsAdvantages', tattooArtistsAdvantagesController.create);
+routes.get('/tattooArtistsAdvantages', tattooArtistsAdvantagesController.get);
+routes.delete('/tattooArtistsAdvantages/:id', tattooArtistsAdvantagesController.delete);
+routes.put('/tattooArtistsAdvantages/:id', tattooArtistsAdvantagesController.update);
 routes.post('/tattooists', tattooistsController.create);
 routes.get('/tattooists', tattooistsController.get);
 routes.delete('/tattooists/:id', tattooistsController.delete);
