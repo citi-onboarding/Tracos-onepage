@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { TattooArtistsAdvantages } from '@models/TattooArtistsAdvantages'
 import { Citi, Crud } from '../global'
 
-export default class VantagensTatuadoresController implements Crud {
+export default class TattooArtistsAdvantagesController implements Crud {
     
     async create(request: Request, response: Response) {
         const { title, img, description } = request.body
