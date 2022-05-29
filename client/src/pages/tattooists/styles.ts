@@ -69,17 +69,25 @@ export const Text = styled.div`
 }
 
 h2 {
+  transition: opacity 0.3s linear;
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
 }
 
 p {
+  transition: opacity 0.3s linear;
   margin-top: -46px;
   font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
+}
+
+#descriptionAux {
+  position:relative;
+  top:-60px;
+  margin-bottom:-60px;
 }
 
 `;
