@@ -54,9 +54,9 @@ export const Tattooists: React.FC = () => {
           case "Mylena Soares":
             currNome = nome.innerText = "Samuel Reis";
             ourTattooist.src = Samuel;
-            descriptionAux.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus odio sit amet sollicitudin porta. Integer in elit ut enim accumsan pellentesque. Phasellus sit amet tortor orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            description.classList.add("hidden");
-            descriptionAux.classList.remove("hidden");
+            description.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus odio sit amet sollicitudin porta. Integer in elit ut enim accumsan pellentesque. Phasellus sit amet tortor orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            descriptionAux.classList.add("hidden");
+            description.classList.remove("hidden");
             ourTattooistAux.classList.add("hidden");
             ourTattooist.classList.remove("hidden");
             nome.classList.remove("hidden");
@@ -91,11 +91,13 @@ export const Tattooists: React.FC = () => {
         id="ourTattooist"
       />
       <Text>
-        <h1 id="ourartists">Nossos Tatuadores</h1>
+        <h1 id="ourartists">Nossos <span>tatuadores</span></h1>
+        <br />
         <br />
         <br />
         <h2 id="name">Samuel Reis</h2>
-        <h2 id="nameAux" className="hidden">Mylena Soares</h2>
+        <h2 id="nameAux" className="hidden">Samuel Reis</h2>
+        <br />
         <p id="description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
           faucibus odio sit amet sollicitudin porta. Integer in elit ut enim

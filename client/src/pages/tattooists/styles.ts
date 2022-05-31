@@ -1,11 +1,22 @@
 import styled from 'styled-components';
+import { NoirProRegularWoff2, NoirProRegularWoff, NoirProMediumWoff2, NoirProMediumWoff, NoirProMediumItalicWoff, NoirProMediumItalicWoff2 } from '../../assets/index'
 
 export const Artists = styled.div`
-  font-family: "NoirPro-Regular";
+ @font-face {
+    font-family: 'Noir Pro Regular';
+    src: url(${NoirProRegularWoff2}) format('woff2'),
+         url(${NoirProRegularWoff}) format('woff'); 
+  } 
+ @font-face {
+    font-family: 'Noir Pro Medium';
+    src: url(${NoirProMediumWoff2}) format('woff2'),
+         url(${NoirProMediumWoff}) format('woff'); 
+  } 
+  font-family: 'Noir Pro Regular';
   display: grid;
-  grid-template-columns: 1fr 2.3fr 4.08fr 1fr;
-  column-gap: 70px;
-  grid-template-rows: 2fr 18.45fr 1fr 1.8fr;
+  grid-template-columns: 1.1fr 2.3fr 4.00fr 1.1fr;
+  column-gap: 60px;
+  grid-template-rows: 2fr 18.45fr 0.8fr 2fr;
 
   .hidden {
   opacity: 0 !important;
@@ -22,7 +33,7 @@ export const Artists = styled.div`
 
 #nameAux {
   position: relative;
-  top: -62px;
+  top: -56px;
   margin: 0px;
 }
 
@@ -57,13 +68,23 @@ export const Artists = styled.div`
 `;
 
 export const Text = styled.div`
+ @font-face {
+    font-family: 'Noir Pro Medium Italic';
+    src: url(${NoirProMediumItalicWoff2}) format('woff2'),
+         url(${NoirProMediumItalicWoff}) format('woff'); 
+  } 
   grid-row: 2/2;
   grid-column: 3/3;
 
+  span {
+    font-family: 'Noir Pro Medium Italic';
+  }
+
   h1 {
-  padding-left: 129px;
+  font-family: 'Noir Pro Medium';
+  padding-left: 150px;
   font-size: 44px;
-  font-weight: 500;
+  font-weight: 100;
   color: #0b0b0b;
   white-space: nowrap;
 }
@@ -71,7 +92,7 @@ export const Text = styled.div`
 h2 {
   transition: opacity 0.3s linear;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 28px;
 }
 
@@ -82,6 +103,7 @@ p {
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
+  color: #0B0B0B;
 }
 
 #descriptionAux {
