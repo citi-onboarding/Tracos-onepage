@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { themeTRS } from '../../styles/theme';
 import { 
     NoirProLightRegularWoff, NoirProLightRegularWoff2,
-    NoirProBoldItalicRegularWoff, NoirProBoldItalicRegularWoff2 
+    NoirProItalicWoff, NoirProItalicWoff2 
 } from '../../assets/index'
 
 export const Container = styled.div`
@@ -13,8 +13,8 @@ export const Container = styled.div`
     }
     @font-face {
         font-family: 'Noir Pro Bold Italic Regular';
-        src: url(${NoirProBoldItalicRegularWoff2}) format('woff2'),
-             url(${NoirProBoldItalicRegularWoff}) format('woff'); 
+        src: url(${NoirProItalicWoff2}) format('woff2'),
+             url(${NoirProItalicWoff2}) format('woff'); 
     }
 
     width: 100%;

@@ -5,8 +5,8 @@ import CitiIcon from './CITi.svg'
 
 import NoirProLightRegularWoff from './noir-pro/NoirPro-Webfont/NoirPro-Light.woff';
 import NoirProLightRegularWoff2 from './noir-pro/NoirPro-Webfont/NoirPro-Italic.woff2';
-import NoirProBoldItalicRegularWoff from './noir-pro/NoirPro-Webfont/NoirPro-BoldItalic.woff'
-import NoirProBoldItalicRegularWoff2 from './noir-pro/NoirPro-Webfont/NoirPro-BoldItalic.woff2'
+import NoirProItalicWoff from './noir-pro/NoirPro-Webfont/NoirPro-Italic.woff'
+import NoirProItalicWoff2 from './noir-pro/NoirPro-Webfont/NoirPro-Italic.woff2'
 
 export {
     CitiIcon,
@@ -14,8 +14,8 @@ export {
     InstagramIcon,
     TwitterIcon,
 
-    NoirProBoldItalicRegularWoff,
-    NoirProBoldItalicRegularWoff2,
+    NoirProItalicWoff,
+    NoirProItalicWoff2,
     NoirProLightRegularWoff,
     NoirProLightRegularWoff2
 };
