@@ -12,7 +12,7 @@ export const Container = styled.div`
             url(${NoirProLightRegularWoff}) format('woff'); 
     }
     @font-face {
-        font-family: 'Noir Pro Bold Italic Regular';
+        font-family: 'Noir Pro Bold Italic';
         src: url(${NoirProItalicWoff2}) format('woff2'),
              url(${NoirProItalicWoff2}) format('woff'); 
     }
@@ -38,7 +38,7 @@ export const Box = styled.div`
     h1{
         color: white;
         font-size: 55px;
-        font-family: 'Noir Pro Bold Italic Regular'; 
+        font-family: 'Noir Pro Bold Italic'; 
         font-weight: 600;
         margin-left: 120px;
     }
@@ -66,7 +66,7 @@ export const SocialIcons = styled.div`
 `;
 
 export const Line = styled.hr`
-    border: 0.5px solid ${themeTRS.colors.line};
+    border: 0.5px groove ${themeTRS.colors.line};
 `;
 
 export const Copyright = styled.div`
