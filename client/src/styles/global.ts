@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-
+import { themeTRS } from './theme';
 export const GlobalStyle = createGlobalStyle`
 
   * {
@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme.colors.background};
+    background: ${themeTRS.colors.background};
     color: ${(props) => props.theme.colors.text};
     font: 400 16px Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
