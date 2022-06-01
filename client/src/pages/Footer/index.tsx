@@ -24,7 +24,7 @@ export const Footer = () => {
             </Box>
             <Line></Line>
             <Copyright>
-                <p>Todos os direitos reservado</p>
+                <p>Todos os direitos reservados</p>
                 <p>Made with &lt; / &gt; and <img src={Heart} alt="heart icon"/> by <img src={CitiIcon} alt="Citi icon"/></p>
             </Copyright>
         </Container>
