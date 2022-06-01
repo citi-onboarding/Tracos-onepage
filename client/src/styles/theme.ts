@@ -10,5 +10,6 @@ export const themeTRS = {
   colors: {
     backgroundFooter: '#0B0B0B',
     text: '#F5F5F5',
+    line: '#BBBBBB'
   },
 };
