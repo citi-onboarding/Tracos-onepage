@@ -66,7 +66,7 @@ export const SocialIcons = styled.div`
 `;
 
 export const Line = styled.hr`
-    border: 0.5px solid #BBBBBB;
+    border: 0.5px solid ${themeTRS.colors.line};
 `;
 
 export const Copyright = styled.div`
