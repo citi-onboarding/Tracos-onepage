@@ -1,5 +1,7 @@
-import React from "react";
-import { Card, CardImage, CardTitle, CardText, Container, Title} from "./style";
+import React, { useState } from "react";
+import { Container } from "../../section/ContainerTattooedPeopleAdvantages/style";
+import { Box, Card, CardImage, CardTitle, CardText, Line, Title} from "./style";
+
 
 type CardProps = {
     image?: string;
@@ -9,17 +11,21 @@ type CardProps = {
 
 export const TattooedPeopleAdvantagesTitle: React.FC = () =>{
     return(
-        <Title>Para quem procura traços</Title>
+        <Title>Para quem<span>procura</span>traços</Title>
     )
-}
+};
+
 export const TattooedPeopleAdvantages: React.ElementType = ({ image, text, title }: CardProps) =>{
+
     return(
-        <Card>
-            <CardTitle>{title}</CardTitle>
-            <CardImage src={image}/>
-            <CardText>{text}</CardText>
-        </Card>
+        <Box>
+            <Card>
+                <CardTitle><Line></Line>{title}</CardTitle>
+                <CardImage src={image}/>
+                <CardText>{text}</CardText>
+            </Card>
+        </Box>
     )
-} 
+}; 
 
 export default TattooedPeopleAdvantages;
