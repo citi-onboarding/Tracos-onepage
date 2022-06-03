@@ -14,9 +14,10 @@ export const Artists = styled.div`
   } 
   font-family: 'Noir Pro Regular';
   display: grid;
-  grid-template-columns: 1.1fr 2.3fr 4.00fr 1.1fr;
+  grid-template-columns: 1.1fr 335px 582px 1.1fr;
   column-gap: 60px;
   grid-template-rows: 2fr 18.45fr 0.8fr 2fr;
+  min-width:1097px;
 
   .hidden {
   opacity: 0 !important;
@@ -27,7 +28,6 @@ export const Artists = styled.div`
   grid-column: 2/2;
   grid-row: 1/5;
   width: 100%;
-  min-width: 335px;
   transition: opacity 0.3s linear;
 }
 
