@@ -1,6 +1,8 @@
 import styled from 'styled-components'; 
-import { themeTRS } from '../../styles/theme';
 
 export const Container =  styled.div`
     display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 56px;
 `;
