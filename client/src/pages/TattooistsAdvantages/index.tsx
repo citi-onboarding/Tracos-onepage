@@ -1,5 +1,5 @@
 import React from "react";
-import { Title, CardImage, CardTitle, CardDescription, Edge, Line } from './styles';
+import { Title, CardImage, CardTitle, CardDescription, Edge, Line, LineTitle } from './styles';
 
 type CardProps = {
     image?: string;
@@ -11,7 +11,7 @@ export const TattooistsAdvantagesTitle: React.FC = () =>{
     return(
         <>
         <Line></Line>
-        <Title>Para quem <span>marcam</span></Title>
+        <Title>Para quem <span>marca</span></Title>
         </>
     )
 }
@@ -20,7 +20,7 @@ export const TattooistsAdvantagesTitle: React.FC = () =>{
 export const TattooistsAdvantages: React.ElementType = ({title, image, description}: CardProps) =>{
     return( 
         <Edge>
-            <CardTitle>{title}</CardTitle>
+            <CardTitle><LineTitle></LineTitle>{title}</CardTitle>
 
             <CardImage src={image} alt="imagem" />
 

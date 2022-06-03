@@ -12,7 +12,8 @@ export const Title = styled.div`
     position: absolute;
     width: 800px;
     height: 66px;
-    margin: 7vh 0vh 0vh 75vh;
+    margin-top: 5vh;
+    margin-left: 77vh;
 
     font-family: 'Noir Pro Medium', sans-serif;
     font-style: normal;
@@ -40,13 +41,19 @@ export const Line = styled.div`
     border: 1px solid #0B0B0B;
 `;
 
-export const CardTitle = styled.div`
+export const CardTitle = styled.h1`
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
     font-family: 'Barlow', sans-serif;
     font-weight: 500;
     color: #0B0B0B;
+    
 `;
 
-export const CardDescription = styled.div`
+export const CardDescription = styled.p`
+    font-size: 14px;
     font-family: 'Barlow', sans-serif;
     font-weight: 300;
     color: #0B0B0B;
@@ -71,10 +78,31 @@ export const Edge = styled.div`
     height: 350px;
 
     border: 1px solid #0B0B0B;
-    margin-top: 170px;
+    margin-top: 23vh;
+
+    :hover{
+        background-color: black;
+        
+    }
+    :hover h1{
+        color: white;
+    }
+    :hover p{
+        color: white;
+    }
+
+    :hover span{
+        background-color: white;
+    }
     
 `;
 
+export const LineTitle = styled.span`
+    background-color: black;
+    width: 24px;
+    height: 1.1px;
+
+`;
 
 
 
