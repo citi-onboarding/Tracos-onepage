@@ -1,21 +1,39 @@
-import styled from 'styled-components'; 
+import styled from 'styled-components';
+import { NoirProMediumWoff2, NoirProMediumWoff, NoirProMediumItalicWoff, NoirProMediumItalicWoff2 } from '../../assets/index';
 
 export const Title = styled.div`
+
+ @font-face {
+    font-family: 'Noir Pro Medium';
+    src: url(${NoirProMediumWoff2}) format('woff2'),
+         url(${NoirProMediumWoff}) format('woff'); 
+  }
+
     position: absolute;
     width: 800px;
     height: 66px;
-    margin: 48px 0px 0px 428px;
+    margin: 7vh 0vh 0vh 75vh;
 
-    font-family: 'Noir Pro', sans-serif;
+    font-family: 'Noir Pro Medium', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 55px;
     line-height: 66px;
 
     color: #000000;
+
+    span{
+        @font-face {
+            font-family: 'Noir Pro Medium Italic';
+            src: url(${NoirProMediumItalicWoff2}) format('woff2'),
+                url(${NoirProMediumItalicWoff}) format('woff'); 
+        }
+        font-family: 'Noir Pro Medium Italic', sans-serif;
+        font-weight: 500;
+    }
 `;
 
-export const Linha = styled.div`
+export const Line = styled.div`
     position: absolute;
     height: 0px;
     width: 100%; 
@@ -23,11 +41,13 @@ export const Linha = styled.div`
 `;
 
 export const CardTitle = styled.div`
+    font-family: 'Barlow', sans-serif;
     font-weight: 500;
     color: #0B0B0B;
 `;
 
 export const CardDescription = styled.div`
+    font-family: 'Barlow', sans-serif;
     font-weight: 300;
     color: #0B0B0B;
 `;
