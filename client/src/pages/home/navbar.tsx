@@ -8,19 +8,7 @@ const Home: React.FC = () => {
     return (
         <div>
             <Navbar/>
-                <HomeContainer id="homeContainer">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui debitis numquam impedit hic, molestiae assumenda, odio asperiores illum possimus repellendus ipsum vel voluptates rem temporibus dolore autem aliquam quibusdam quod.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui debitis numquam impedit hic, molestiae assumenda, odio asperiores illum possimus repellendus ipsum vel voluptates rem temporibus dolore autem aliquam quibusdam quod.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui debitis numquam impedit hic, molestiae assumenda, odio asperiores illum possimus repellendus ipsum vel voluptates rem temporibus dolore autem aliquam quibusdam quod.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui debitis numquam impedit hic, molestiae assumenda, odio asperiores illum possimus repellendus ipsum vel voluptates rem temporibus dolore autem aliquam quibusdam quod.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui debitis numquam impedit hic, molestiae assumenda, odio asperiores illum possimus repellendus ipsum vel voluptates rem temporibus dolore autem aliquam quibusdam quod.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui debitis numquam impedit hic, molestiae assumenda, odio asperiores illum possimus repellendus ipsum vel voluptates rem temporibus dolore autem aliquam quibusdam quod.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui debitis numquam impedit hic, molestiae assumenda, odio asperiores illum possimus repellendus ipsum vel voluptates rem temporibus dolore autem aliquam quibusdam quod.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui debitis numquam impedit hic, molestiae assumenda, odio asperiores illum possimus repellendus ipsum vel voluptates rem temporibus dolore autem aliquam quibusdam quod.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui debitis numquam impedit hic, molestiae assumenda, odio asperiores illum possimus repellendus ipsum vel voluptates rem temporibus dolore autem aliquam quibusdam quod.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui debitis numquam impedit hic, molestiae assumenda, odio asperiores illum possimus repellendus ipsum vel voluptates rem temporibus dolore autem aliquam quibusdam quod.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui debitis numquam impedit hic, molestiae assumenda, odio asperiores illum possimus repellendus ipsum vel voluptates rem temporibus dolore autem aliquam quibusdam quod.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui debitis numquam impedit hic, molestiae assumenda, odio asperiores illum possimus repellendus ipsum vel voluptates rem temporibus dolore autem aliquam quibusdam quod.</p>            
+                <HomeContainer id="homeContainer">           
                 </HomeContainer>
         </div>
             
