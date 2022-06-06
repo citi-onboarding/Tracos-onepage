@@ -33,10 +33,6 @@ export const Back = styled.div`
 `;
 
 export const Image = styled.img`
-    
-    //background: linear-gradient(180deg, rgba(11, 11, 11, 0) 0%, #0B0B0B 100%;
-    //mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
-   //-webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
 
     margin: 3.5vh 15vh 0vh 0vh;
     width: 600px;
