@@ -1,12 +1,12 @@
 import styled from 'styled-components'; 
-import { themeTRS } from '../../styles/theme';
-import { NoirProItalicWoff, NoirProItalicWoff2, NoirProRegularWoff, NoirProRegularWoff2} from '../../assets';
+import { themeTRS } from '../../../styles/theme';
+import { NoirProItalicWoff, NoirProItalicWoff2, NoirProRegularWoff, NoirProRegularWoff2} from '../../../assets';
 
 
 export const Title = styled.h1`
     display: flex;
     justify-content: center;
-    color: ${themeTRS.colors.title};
+    color: #000;
     font-family: 'Noir Pro Regular';
     margin-top: 139px; 
     span{
@@ -81,4 +81,4 @@ export const Line = styled.span`
     transition: 1s;
 `;
 
-//fonte cards
+

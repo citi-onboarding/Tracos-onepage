@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import { Container } from "../../section/ContainerTattooedPeopleAdvantages/style";
+import React from "react";
 import { Box, Card, CardImage, CardTitle, CardText, Line, Title} from "./style";
-
 
 type CardProps = {
     image?: string;

@@ -3,14 +3,12 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
 
-import { TattooedPeopleAdvantagesTitle } from './pages';
-import { ContainerTattooedPeopleAdvantages }  from './section'
+import { Home } from './pages'
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <TattooedPeopleAdvantagesTitle/>
-      <ContainerTattooedPeopleAdvantages/>      
+      <Home/>   
       <GlobalStyle/>
     </ThemeProvider>
   );
