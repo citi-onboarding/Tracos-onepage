@@ -3,7 +3,7 @@ import { themeTRS } from '../../styles/theme';
 import { 
     NoirProLightRegularWoff, NoirProLightRegularWoff2,
     NoirProItalicWoff, NoirProItalicWoff2 
-} from '../../assets/index'
+} from '../../assets'
 
 export const Container = styled.div`
     @font-face {
@@ -14,7 +14,7 @@ export const Container = styled.div`
     @font-face {
         font-family: 'Noir Pro Bold Italic';
         src: url(${NoirProItalicWoff2}) format('woff2'),
-             url(${NoirProItalicWoff2}) format('woff'); 
+             url(${NoirProItalicWoff}) format('woff'); 
     }
 
     width: 100%;
@@ -40,14 +40,14 @@ export const Box = styled.div`
         font-size: 55px;
         font-family: 'Noir Pro Bold Italic'; 
         font-weight: 600;
-        margin-left: 120px;
+        margin-right: 80px;
     }
 `;
 
 export const Social = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 0 120px 50px 0;
+    margin: 0 120px 0px 0;
     p{
         font-weight: 500;
         font-size: 18px;
@@ -80,4 +80,10 @@ export const Copyright = styled.div`
         font-size: 16px;
         margin: 0 120px 0 120px;
     }
+`;
+
+export const Teste = styled.div`
+    width: 260px;
+    margin-left: 120px;
+
 `;
