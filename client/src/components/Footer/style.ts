@@ -80,10 +80,13 @@ export const Copyright = styled.div`
         font-size: 16px;
         margin: 0 120px 0 120px;
     }
+    img{
+        width: 24px;
+        height: 14px;
+    }
 `;
 
 export const Teste = styled.div`
     width: 260px;
     margin-left: 120px;
-
 `;
