@@ -76,6 +76,10 @@ export const Text = styled.div`
   grid-row: 2/2;
   grid-column: 3/3;
 
+  #name {
+    padding-top:2em;
+  }
+
   span {
     font-family: 'Noir Pro Medium Italic';
   }
@@ -104,6 +108,10 @@ p {
   font-weight: 300;
   font-size: 18px;
   color: #0B0B0B;
+}
+
+#description {
+  padding-top:1em;
 }
 
 #descriptionAux {
