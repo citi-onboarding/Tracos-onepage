@@ -1,8 +1,7 @@
 import { Home } from './home';
-import { TattooistsAdvantages, TattooistsAdvantagesTitle } from './tattooistsAdvantages';
+import { TattooistsAdvantages } from './tattooistsAdvantages';
 
 export {
     Home,
     TattooistsAdvantages,
-    TattooistsAdvantagesTitle,
 };

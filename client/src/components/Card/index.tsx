@@ -1,28 +1,21 @@
 import React from "react";
-import { TattooistsAdvantages } from '../../pages';
-import { Foto1, Foto2, Foto3 } from "../../assets";
-import { Container } from "./styles";
+import { Edge, CardTitle, LineTitle, CardDescription, CardImage} from "./styles";
 
+type CardProps = {
+    image?: string;
+    title?: string;
+    description?: string;
+};
 
-export const Card: React.ElementType = () =>{
-    return(
-    <Container>
-        <TattooistsAdvantages
-        title = "Feature 00"
-        image = {Foto2}
-        description = "Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Donec faucibus odio sit amet sollicitudin porta."
-        />
-        <TattooistsAdvantages
-        title = "Feature 00"
-        image = {Foto1}
-        description = "Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Donec faucibus odio sit amet sollicitudin porta."
-        />
-        <TattooistsAdvantages
-        title = "Feature 00"
-        image = {Foto3}
-        description = "Lorem ipsum dolor sit amet, cons ectetur adipiscing elit. Donec faucibus odio sit amet sollicitudin porta."
-        />
-    </Container>
-       
+export const Card: React.ElementType = ({title, image, description}: CardProps) =>{
+    return( 
+        <Edge>
+            <CardTitle><LineTitle></LineTitle>{title}</CardTitle>
+
+            <CardImage src={image} alt="imagem" />
+
+            <CardDescription>{description}</CardDescription>
+        </Edge>   
     )
-} 
+}
+

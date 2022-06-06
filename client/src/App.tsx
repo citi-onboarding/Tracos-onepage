@@ -3,14 +3,13 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
 import { Card } from './components';
-import { TattooistsAdvantagesTitle } from './pages';
+import { TattooistsAdvantages } from './pages';
 
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <TattooistsAdvantagesTitle/>
-      <Card/>
+      <TattooistsAdvantages/>
       <GlobalStyle/>
     </ThemeProvider>
   );
