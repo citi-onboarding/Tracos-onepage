@@ -2,6 +2,8 @@ import Heart from './Heart.svg';
 import InstagramIcon from './Instagram.svg';
 import TwitterIcon from './Twitter.svg'
 import CitiIcon from './CITi.svg'
+import AppleIcon from './apple.svg'
+import PlayStoreIcon from './playstore.svg'
 
 import NoirProLightRegularWoff from './noir-pro/NoirPro-Webfont/NoirPro-Light.woff';
 import NoirProLightRegularWoff2 from './noir-pro/NoirPro-Webfont/NoirPro-Italic.woff2';
@@ -13,6 +15,8 @@ export {
     Heart,
     InstagramIcon,
     TwitterIcon,
+    PlayStoreIcon,
+    AppleIcon,
 
     NoirProItalicWoff,
     NoirProItalicWoff2,
