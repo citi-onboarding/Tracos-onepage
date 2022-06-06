@@ -38,6 +38,9 @@ export const Box = styled.div`
     :hover span{
         background-color: ${themeTRS.colors.textHover};
     }
+    :hover img{
+        filter: invert(1);
+    }
 `;
 
 export const Card = styled.div`
@@ -49,6 +52,7 @@ export const Card = styled.div`
     img{
         width: 265px;
         height: 142px;
+        transition: 1s;
     }
     transition: 1s;
     font-family: 'Barlow';
