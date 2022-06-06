@@ -4,5 +4,5 @@ import { Tattooists } from './tattooists';
 
 export {
     Home,
-    Tattooists
+    Tattooists,
 };

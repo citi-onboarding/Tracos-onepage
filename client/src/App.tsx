@@ -9,7 +9,7 @@ import { Tattooists } from './pages';
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Tattooists/>
+      <Tattooists />
     </ThemeProvider>
   );
 }
