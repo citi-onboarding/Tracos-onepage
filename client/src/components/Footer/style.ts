@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import { themeTRS } from '../../styles/theme';
-import { 
-    NoirProLightRegularWoff, NoirProLightRegularWoff2,
-    NoirProItalicWoff, NoirProItalicWoff2 
-} from '../../assets'
+import { NoirProLightRegularWoff, NoirProLightRegularWoff2, NoirProItalicWoff, NoirProItalicWoff2 } from '../../assets'
 
 export const Container = styled.div`
     @font-face {
@@ -27,6 +24,19 @@ export const Container = styled.div`
     justify-content: flex-end;
     color: ${themeTRS.colors.text};
     font-family: 'Noir Pro Regular';
+
+    @media (max-width: 1000px) {
+        height: 565px;
+        p {
+            color: #0B0B0B;
+        }
+        hr{
+            border: 1px solid #0B0B0B;
+        }
+        img, h1{
+            display: none;
+        }
+    }
 `;
 
 export const Box = styled.div`
@@ -53,7 +63,7 @@ export const Social = styled.div`
         font-size: 18px;
     }
     img{
-        width: 24px;
+        width: 22px;
         height: 24px;
     }
 `;
