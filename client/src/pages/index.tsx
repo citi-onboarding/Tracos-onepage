@@ -1,6 +1,5 @@
-import { TattooedPeopleAdvantages, TattooedPeopleAdvantagesTitle } from './TattooedPeopleAdvantages'
+import { Home } from "./home";
 
 export {
-    TattooedPeopleAdvantages,
-    TattooedPeopleAdvantagesTitle,
+    Home
 };

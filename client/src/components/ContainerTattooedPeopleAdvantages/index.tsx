@@ -1,5 +1,5 @@
 import React from "react";
-import { TattooedPeopleAdvantages } from "../../pages";
+import { TattooedPeopleAdvantages } from "./TattooedPeopleAdvantages";
 import { ImageAdvantage1, ImageAdvantage2, ImageAdvantage3 } from '../../assets'
 import { Container } from "./style";
 
