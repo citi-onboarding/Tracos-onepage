@@ -1,14 +1,12 @@
 import styled from 'styled-components';
-import { NoirProSemiBoldWoff, NoirProSemiBoldWoff2, NoirProSemiBoldItalicWoff, NoirProSemiBoldItalicWoff2, NoirProRegularWoff, NoirProRegularWoff2 } from '../../assets/index'
+import { NoirProSemiBoldWoff, NoirProSemiBoldWoff2, NoirProRegularWoff, NoirProRegularWoff2, NoirProLightWoff, NoirProLightWoff2 } from '../../assets/index'
 
 export const Back = styled.div`
-    
+
     width: 100%;
-    height: 800px;
-    left: 0px;
-    top: 90px;
+    height: 70vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
     background: #0B0B0B;
 
@@ -16,85 +14,168 @@ export const Back = styled.div`
     font-family: 'Noir Pro SemiBold';
     src: url(${NoirProSemiBoldWoff}) format('woff'),
          url(${NoirProSemiBoldWoff2}) format('woff2'); 
-  }
+    }
 
-  @font-face {
-    font-family: 'Noir Pro SemiBoldItalic';
-    src: url(${NoirProSemiBoldItalicWoff}) format('woff'),
-         url(${NoirProSemiBoldItalicWoff2}) format('woff2'); 
-  }
+    @font-face {
+        font-family: 'Noir Pro Regular';
+        src: url(${NoirProRegularWoff}) format('woff'),
+            url(${NoirProRegularWoff2}) format('woff2'); 
+    }
 
-  @font-face {
-    font-family: 'Noir Pro Regular';
-    src: url(${NoirProRegularWoff}) format('woff'),
-         url(${NoirProRegularWoff2}) format('woff2'); 
-  }
+    @font-face {
+        font-family: 'Noir Pro Light';
+        src: url(${NoirProLightWoff}) format('woff'),
+            url(${NoirProLightWoff2}) format('woff2'); 
+    }
+
+    @media screen and (max-width: 1000px){
+        width: 100%;
+        height: 30vh;
+        
+    }
+
 
 `;
 
-export const Image = styled.img`
+export const Image = styled.div`
 
-    margin: 3.5vh 15vh 0vh 0vh;
-    width: 600px;
-    height: 700px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    img{
+        width: 550px;
+        height: 650px;
+    }
+
+    @media screen and (max-width: 1000px){
+        display: none;
+    }
   
-
-`;
-
-export const ImageSeta = styled.img`
-
-    height: 17px;
-    width: 15px;
-    margin-left: 250px;
-    margin-top: 5px;
 `;
 
 export const Texts = styled.div`
-h1 {
 
-    height: 164px;
-    padding-top: 144px;
-    padding-left: 140px;
-    margin: 0;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    font-family: 'Noir Pro SemiBold';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 68px;
-    line-height: 82px;
+    h1 {
 
-    color: #FFFFFF;
+        height: fit-content;
 
-}
+        font-family: 'Noir Pro SemiBold';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 68px;
+        line-height: 82px;
 
-p {
+        color: #FFFFFF;
 
-    height: 24px;
-    padding-top: 188.5px;
-    padding-left: 140px;
+        @media screen and (max-width: 1000px){
+            font-size: 44px;
+            height: fit-content;
+            line-height: 53px;
+        
+        }
 
-    font-family: 'Noir Pro Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    }
 
-    color: #FFFFFF;
-}
+    p {
 
-span {
-    font-family: 'Noir Pro SemiBoldItalic';
-}
+        height: fit-content;
+        width: 30vh;
+        display: flex;
+
+        font-family: 'Noir Pro Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+
+        color: #FFFFFF;
+
+        @media screen and (max-width: 1000px){
+            font-size: 18px;
+            height: 8vh;
+            font-family: 'Noir Pro Light';
+            align-items: center;
+        
+        }
+    }
+
+    @media screen and (max-width: 1000px){
+        height: 25vh;
+        
+    }
 
 `;
 
-export const VideoStyle = styled.video`
-    
-    position: absolute;
+export const IntroductionStyled = styled.div`
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+    background: #0B0B0B;
+
+    video{
+
     width: 935px;
     height: 526px;
-    margin: 90vh 0vh 0vh 42vh;
+    }
+
+    @media screen and (max-width: 1000px){
+
+        width: 100%;
+        height: 30vh;
+
+        video{
+
+            width: 326px;
+            height: 183.4px;
+        }
+
+
+    }
+
+`;
+
+export const SetaStyled = styled.div`
     
-    
+    height: 2vh;
+    width: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6px;
+
+    @media screen and (max-width: 1000px){
+        display: none;
+        
+    }
     
 `;
+
+export const SetaStyled2 = styled.div`
+    
+   display:none;
+   height: 4vh;
+   width: 5vh;
+
+    @media screen and (max-width: 1000px){
+
+        display: flex;
+        height: 4vh;
+        width: 3vh;
+        align-items: center;
+        justify-content: center;
+
+        
+    }
+    
+`;
+
