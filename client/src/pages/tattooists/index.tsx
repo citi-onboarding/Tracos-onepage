@@ -76,13 +76,13 @@ export const Tattooists: React.FC = () => {
     <Artists>
       <img
         src={artist && artist[oddIndex].image}
-        alt=""
+        alt={(artist && artist[oddIndex].name && index % 2) ? `Foto de ${artist && artist[oddIndex].name}` : ""}
         className={index%2 ? "tattooist" : "hidden tattooist"}
         id="ourTattooistAux"
       />
       <img
         src={artist && artist[evenIndex].image}
-        alt=""
+        alt={(artist && artist[evenIndex].name && !(index % 2)) ? `Foto de ${artist && artist[evenIndex].name}` : ""}
         className={index%2 ? "hidden tattooist" : "tattooist"} 
         id="ourTattooist"
       />
