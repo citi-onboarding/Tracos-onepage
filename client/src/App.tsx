@@ -4,12 +4,12 @@ import { theme } from './styles/theme';
 import { GlobalStyle } from './styles/global';
 
 
-import { Tattooists } from './pages';
+import { Home } from './pages';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Tattooists />
+      <Home />
     </ThemeProvider>
   );
 }

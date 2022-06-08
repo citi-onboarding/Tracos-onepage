@@ -74,6 +74,9 @@ export const Tattooists: React.FC = () => {
   }
   return (
     <Artists>
+      <h1 id="ourartists">
+        Nossos <span>tatuadores</span>
+      </h1>
       <img
         src={artist && artist[oddIndex].image}
         alt={(artist && artist[oddIndex].name && index % 2) ? `Foto de ${artist && artist[oddIndex].name}` : ""}
@@ -87,9 +90,6 @@ export const Tattooists: React.FC = () => {
         id="ourTattooist"
       />
       <Text>
-        <h1 id="ourartists">
-          Nossos <span>tatuadores</span>
-        </h1>
         <h2
           id="name"
           className={index%2 ? "hidden" : ""}
