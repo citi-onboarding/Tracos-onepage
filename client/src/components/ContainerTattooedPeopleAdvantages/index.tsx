@@ -17,7 +17,6 @@ export const ContainerTattooedPeopleAdvantages: React.ElementType = () =>{
     const getInfos = async () => {
         const response = await api.get('/tattooedPeopleAdvantages');
         setInfos(response.data);
-        console.log(response.data);
     }
     
     useEffect (() =>{
