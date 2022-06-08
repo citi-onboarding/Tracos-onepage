@@ -7,11 +7,23 @@ export const Title = styled.h1`
     display: flex;
     justify-content: center;
     color: #000;
+    font-size: 55px;
     font-family: 'Noir Pro Regular';
     margin-top: 139px; 
-    span{
-        margin: 0 12px 0 12px;
+    .teste2 {
+        margin: 0 10px;
         font-family: 'Noir Pro Italic';
+    }
+    @media (max-width: 1000px){
+        font-size: 31px;
+    }
+`;
+export const Teste = styled.h1`
+    font-size: 55px;
+    margin: 0 12px 0 12px;
+    font-family: 'Noir Pro Italic';
+    @media (max-width: 1000px){
+        font-size: 31px;
     }
 `;
 
@@ -26,7 +38,23 @@ export const Box = styled.div`
         src: url(${NoirProItalicWoff2}) format('woff2'),
             url(${NoirProItalicWoff}) format('woff'); 
     } 
-    :hover{
+`;
+
+export const Card = styled.div`
+    width: 329px;
+    height: 350px;  
+    border: 1px solid #0B0B0B;
+    padding: 15px 0 0 32px;
+    transition: 1s;
+    font-family: 'Barlow';
+
+    img{
+        width: 265px;
+        height: 142px;
+        transition: 1s;
+    }
+    
+    :hover {
         background-color: ${themeTRS.colors.backgroundHover};
     }
     :hover h1{
@@ -41,25 +69,22 @@ export const Box = styled.div`
     :hover img{
         filter: invert(1);
     }
-`;
 
-export const Card = styled.div`
-    width: 329px;
-    height: 350px;  
-    
-    border: 1px solid #0B0B0B;
-    padding: 15px 0 0 32px;
-    img{
-        width: 265px;
-        height: 142px;
-        transition: 1s;
+    @media (max-width: 1000px){
+        width: 234px;
+        height: 249px;
+        img{
+            width: 188.53px;
+            height: 101.02px;
+        }
     }
-    transition: 1s;
-    font-family: 'Barlow';
 `;
 
 export const CardImage = styled.img`
     margin: 33.95px 0 ;
+    @media (max-width: 1000px){
+        margin: 5px 0 27px 0;
+    }
 `;
 
 export const CardTitle = styled.h1`
@@ -76,6 +101,9 @@ export const CardText = styled.p`
     font-size: 14px;
     color: ${themeTRS.colors.text};
     transition: 1s;
+    @media (max-width: 1000px){
+        font-size: 11.38px;
+    }
 `;
 
 export const Line = styled.span`

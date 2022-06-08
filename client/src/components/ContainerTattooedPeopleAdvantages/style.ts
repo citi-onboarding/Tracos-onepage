@@ -5,4 +5,7 @@ export const Container =  styled.div`
     justify-content: center;
     gap: 70px;
     margin-top: 56px;
+    @media (max-width: 1000px){ 
+        display: grid;
+    }
 `;
