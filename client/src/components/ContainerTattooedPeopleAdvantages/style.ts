@@ -7,5 +7,6 @@ export const Container =  styled.div`
     margin-top: 56px;
     @media (max-width: 1000px){ 
         display: grid;
+        gap: 24px;
     }
 `;

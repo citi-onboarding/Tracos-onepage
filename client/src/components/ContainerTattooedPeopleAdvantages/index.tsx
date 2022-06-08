@@ -1,6 +1,5 @@
 import React from "react";
 import { TattooedPeopleAdvantages } from "./TattooedPeopleAdvantages";
-import { ImageAdvantage1, ImageAdvantage2, ImageAdvantage3 } from '../../assets'
 import { Container } from "./style";
 import { useState, useEffect } from "react";
 import api from "../../services/api";

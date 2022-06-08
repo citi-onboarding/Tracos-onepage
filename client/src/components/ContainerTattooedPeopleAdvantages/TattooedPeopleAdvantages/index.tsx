@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Card, CardImage, CardTitle, CardText, Line, Title, Teste} from "./style";
+import { Box, Card, CardImage, CardTitle, CardText, Line, Title } from "./style";
 
 type CardProps = {
     image?: string;
@@ -9,10 +9,10 @@ type CardProps = {
 
 export const TattooedPeopleAdvantagesTitle: React.FC = () =>{
     return(
-        <Title>
-            <span className="teste1">Para quem</span> 
-            <span className="teste2">procura</span>
-            <span className="teste1">traços</span>
+        <Title> 
+            <div>
+                Para quem <span>procura</span> traços 
+            </div>
         </Title>
     )
 };

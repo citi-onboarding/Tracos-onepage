@@ -10,20 +10,12 @@ export const Title = styled.h1`
     font-size: 55px;
     font-family: 'Noir Pro Regular';
     margin-top: 139px; 
-    .teste2 {
-        margin: 0 10px;
+    span {
         font-family: 'Noir Pro Italic';
     }
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
         font-size: 31px;
-    }
-`;
-export const Teste = styled.h1`
-    font-size: 55px;
-    margin: 0 12px 0 12px;
-    font-family: 'Noir Pro Italic';
-    @media (max-width: 1000px){
-        font-size: 31px;
+        text-align: center;
     }
 `;
 
