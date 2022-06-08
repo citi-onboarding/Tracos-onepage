@@ -24,8 +24,25 @@ export const Container = styled.div`
     justify-content: flex-end;
     color: ${themeTRS.colors.text};
     font-family: 'Noir Pro Regular';
+    @media (max-width: 1000px) {
+        align-items: center;
+    }
 `;
+export const Div = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    @media (max-width: 1000px) {
+        gap: 60px;
+        hr {
+        position: relative;
+        top: 20%;
+        }
+    }
 
+`;
 export const Box = styled.div`
     height: 119px;
     display: flex;
@@ -40,16 +57,14 @@ export const Box = styled.div`
         margin-right: 80px;
     }
     @media (max-width: 1000px){
-        width: 312px;
+        width: 100%;
         flex-direction: column;
-        align-items: start;
-        position: relative;
-        bottom: 20%;
-        left: 10%;
+        align-items: center;
+        gap: 10px;
         h1 {
             position: relative;
-            left: 25%;
-            bottom: 15%;
+            left: 5%;
+            bottom: 20%;
         }
     }
 `;
@@ -67,6 +82,8 @@ export const Social = styled.div`
         height: 24px;
     }
     @media (max-width: 1000px) {
+        position: relative;
+        right: 30px;
         order: 3;
         p {
             font-size: 15px;
