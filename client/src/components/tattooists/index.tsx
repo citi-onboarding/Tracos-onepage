@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { Mylena, Pedro, Samuel, Arrow } from "../../assets";
+import { Arrow } from "../../assets";
 import { Artists, Text } from "./styles";
 import api from "../../services/api";
 
