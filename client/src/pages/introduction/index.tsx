@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import api from "../../services/api";
+import { Seta, Seta2 } from '../../assets'
+
 import {
    Back,
    Texts,
@@ -9,9 +12,26 @@ import {
   
 } from './styles';
 
-import { IPhone, Seta, Seta2, Video } from '../../assets'
+type introduction = {
+    image: string;
+    video: string;
+    link: string;
+};
 
 export const Introduction: React.FC = () => {
+
+    const [infos, setInfos] = useState <introduction[]> ();
+
+    const getInfos = async () => {
+        const response = await api.get('/introduction');
+        setInfos(response.data);
+        console.log(response.data);
+    }
+
+    useEffect (() => {
+        getInfos();
+    }, []) 
+
     return (
         <IntroductionStyled>
             <Back>
@@ -19,7 +39,7 @@ export const Introduction: React.FC = () => {
                     <h1>Encontre <i>o seu</i><br></br> melhor traço</h1>
                     <p>
                         Saiba mais
-                        <a href="#videoTatuadores" >
+                        <a href={infos&&infos[0].link} >
                             <SetaStyled>
                             <img src={Seta} alt="seta" />
                             </SetaStyled>
@@ -30,10 +50,10 @@ export const Introduction: React.FC = () => {
                     </p>
                 </Texts>
                 <Image>
-                    <img src={IPhone} alt="iphone" />
+                    <img src={infos&&infos[0].image} alt="iphone" />
                 </Image>
             </Back>
-            <video src={Video} id="videoTatuadores"/>
+            <video src={infos&&infos[0].video} id="videoTatuadores"/>
         </IntroductionStyled>
            
     );
