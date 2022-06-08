@@ -38,7 +38,7 @@ export const Div = styled.div`
         gap: 60px;
         hr {
         position: relative;
-        top: 20%;
+        top: 15%;
         }
     }
 
