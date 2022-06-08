@@ -24,19 +24,6 @@ export const Container = styled.div`
     justify-content: flex-end;
     color: ${themeTRS.colors.text};
     font-family: 'Noir Pro Regular';
-
-    @media (max-width: 1000px) {
-        height: 565px;
-        p {
-            color: #0B0B0B;
-        }
-        hr{
-            border: 1px solid #0B0B0B;
-        }
-        img, h1{
-            display: none;
-        }
-    }
 `;
 
 export const Box = styled.div`
@@ -52,19 +39,38 @@ export const Box = styled.div`
         font-weight: 600;
         margin-right: 80px;
     }
+    @media (max-width: 1000px){
+        width: 312px;
+        flex-direction: column;
+        align-items: start;
+        position: relative;
+        bottom: 20%;
+        left: 10%;
+        h1 {
+            position: relative;
+            left: 25%;
+            bottom: 15%;
+        }
+    }
 `;
 
 export const Social = styled.div`
     display: flex;
     flex-direction: column;
     margin: 0 120px 0px 0;
-    p{
+    p {
         font-weight: 500;
         font-size: 18px;
     }
-    img{
+    img {
         width: 22px;
         height: 24px;
+    }
+    @media (max-width: 1000px) {
+        order: 3;
+        p {
+            font-size: 15px;
+        }
     }
 `;
 
@@ -73,10 +79,21 @@ export const SocialIcons = styled.div`
     justify-content: end;
     margin-top: 24px;
     gap: 24px;
+    @media (max-width: 1000px) {
+        position: relative;
+        bottom: 20%;
+        img {
+            width: 21px;
+            height: 21px;
+        }
+    }
 `;
 
 export const Line = styled.hr`
     border: 0.5px groove ${themeTRS.colors.line};
+    @media (max-width: 1000px) {
+        margin-bottom: 3%;
+    }
 `;
 
 export const Copyright = styled.div`
@@ -85,14 +102,28 @@ export const Copyright = styled.div`
     align-items: center;
     justify-content: space-between;
     line-height: 19px;
-    p{
+    p {
         font-weight: 400;
         font-size: 16px;
         margin: 0 120px 0 120px;
     }
-    img{
+    img {
         width: 24px;
         height: 14px;
+    }
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        margin-bottom: 3%;
+        p {
+            width: 100%;
+            align-items: center;
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            img {
+                margin-left: 4px;
+            }
+        }
     }
 `;
 
@@ -103,5 +134,13 @@ export const Teste = styled.div`
     p{
         font-size: 16px;
         margin: 0;
+    }
+    @media (max-width: 1000px){
+        margin: 0;
+        width: 330px;
+        order: 2;
+        p {
+            font-size: 15px;
+        }
     }
 `;
