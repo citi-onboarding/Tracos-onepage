@@ -97,6 +97,11 @@ export const Copyright = styled.div`
 `;
 
 export const Teste = styled.div`
-    width: 260px;
+    width: 270px;
+    height: 69px;
     margin-left: 120px;
+    p{
+        font-size: 16px;
+        margin: 0;
+    }
 `;
