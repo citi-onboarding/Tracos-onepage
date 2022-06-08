@@ -15,7 +15,8 @@ type footerInfos = {
     address: string;
     linkAppleStore: string;
     linkGooglePlay: string;
-    linkPrivacy: string;
+    linkInstagram: string;
+    linkTwitter: string;
     phone: string;
 }
 
@@ -25,7 +26,6 @@ export const Footer = () => {
     const getInfos =async () => {
         const response = await api.get('/footer');
         setInfos(response.data);
-        console.log(response.data);
     }    
 
     useEffect (() =>{
@@ -45,8 +45,8 @@ export const Footer = () => {
                     <SocialIcons>
                     <a href={infos&&infos[0].linkAppleStore} target="_blank"><img src={AppleIcon} alt="apple icon"/></a>
                     <a href={infos&&infos[0].linkGooglePlay} target="_blank"><img src={PlayStoreIcon} alt="play store icon"/></a>
-                    <a href="" target="_blank"><img src={InstagramIcon} alt="instagram icon"/></a>
-                    <a href="" target="_blank"><img src={TwitterIcon} alt="twitter icon"/></a>
+                    <a href={infos&&infos[0].linkInstagram} target="_blank"><img src={InstagramIcon} alt="instagram icon"/></a>
+                    <a href={infos&&infos[0].linkTwitter} target="_blank"><img src={TwitterIcon} alt="twitter icon"/></a>
                     </SocialIcons>
                 </Social>
             </Box>

@@ -19,6 +19,9 @@ export class Footer{
     linkGooglePlay: string
 
     @Column()
-    linkPrivacy: string
+    linkInstagram: string
+
+    @Column()
+    linkTwitter: string
 
 }
