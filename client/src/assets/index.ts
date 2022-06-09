@@ -6,6 +6,12 @@ import rightArrow from './rightArrow.svg';
 import contactBackground from './contactBackground.png';
 import menuIcon from './menuIcon.svg';
 import closeMenuIcon from './closeMenuIcon.png'
+import Heart from './Heart.svg';
+import InstagramIcon from './Instagram.svg';
+import TwitterIcon from './Twitter.svg'
+import CitiIcon from './CITi.svg'
+import AppleIcon from './Apple_logo_grey 1.png'
+import PlayStoreIcon from './playstore.svg'
 
 import NoirProSemiBoldWoff from './noir-pro/NoirPro-Webfont/NoirPro-SemiBold.woff';
 import NoirProSemiBoldWoff2 from './noir-pro/NoirPro-Webfont/NoirPro-SemiBold.woff2';
@@ -19,6 +25,10 @@ import NoirProRegularItalicWoff from './noir-pro/NoirPro-Webfont/NoirPro-Italic.
 import NoirProRegularItalicWoff2 from './noir-pro/NoirPro-Webfont/NoirPro-Italic.woff2'
 import NoirProSemiBoldItalicWoff from './noir-pro/NoirPro-Webfont/NoirPro-SemiBoldItalic.woff'
 import NoirProSemiBoldItalicWoff2 from './noir-pro/NoirPro-Webfont/NoirPro-SemiBoldItalic.woff2'
+import NoirProLightRegularWoff from './noir-pro/NoirPro-Webfont/NoirPro-Light.woff';
+import NoirProLightRegularWoff2 from './noir-pro/NoirPro-Webfont/NoirPro-Italic.woff2';
+import NoirProItalicWoff from './noir-pro/NoirPro-Webfont/NoirPro-Italic.woff'
+import NoirProItalicWoff2 from './noir-pro/NoirPro-Webfont/NoirPro-Italic.woff2'
 import Video from './tatuadores.mp4';
 
 export {
@@ -30,6 +40,12 @@ export {
     contactBackground,
     menuIcon,
     closeMenuIcon,
+    CitiIcon,
+    Heart,
+    InstagramIcon,
+    TwitterIcon,
+    PlayStoreIcon,
+    AppleIcon,
     NoirProSemiBoldItalicWoff,
     NoirProSemiBoldItalicWoff2,
     NoirProRegularItalicWoff,
@@ -42,5 +58,10 @@ export {
     NoirProLightWoff2,
     NoirProMediumWoff,
     NoirProMediumWoff2,
+    NoirProItalicWoff,
+    NoirProItalicWoff2,
+    NoirProLightRegularWoff,
+    NoirProLightRegularWoff2,
     Video,
 };
+
