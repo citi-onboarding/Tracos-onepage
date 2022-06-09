@@ -49,12 +49,12 @@ const Contact: React.FC = () => {
                     
                     <select name="referrer" defaultValue="" id="referrer" placeholder="Como nos conheceu?" required onChange={e => {referrer = e.target.value}}>
                         <option value="" disabled hidden>Como nos conheceu?</option>
-                        <option value="social media">Redes sociais</option>
-                        <option value="searching">Pesquisa no Google</option> {/* 'pesquisa na internet? */}
-                        <option value="online advertisement">Anúncios online</option>
-                        <option value="influencers">Influenciadores</option>
-                        <option value="referral">Indicação de conhecidos</option>
-                        <option value="another">Outros</option>
+                        <option value="Redes Sociais">Redes sociais</option>
+                        <option value="Pesquisa no Google">Pesquisa no Google</option> {/* 'pesquisa na internet? */}
+                        <option value="Anúncios Online">Anúncios online</option>
+                        <option value="Influenciadores">Influenciadores</option>
+                        <option value="Indicação de Conhecidos">Indicação de conhecidos</option>
+                        <option value="Outros">Outros</option>
                     </select>
 
                     <input type="text" name="description" id="description" placeholder="Motivo do contato" required onChange={e => {description = e.target.value}}/>

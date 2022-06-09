@@ -1,4 +1,4 @@
-import { Home } from './home/contact';
+import { Home } from './home/navbar';
 
 export {
     Home

@@ -1,6 +1,8 @@
 import LogoCITi from './logo.png';
 import rightArrow from './rightArrow.svg';
 import contactBackground from './contactBackground.png';
+import menuIcon from './menuIcon.svg';
+import closeMenuIcon from './closeMenuIcon.png'
 
 import NoirProRegularWoff from './fonts/noir-pro/NoirPro-Webfont/NoirPro-Regular.woff'
 import NoirProRegularWoff2 from './fonts/noir-pro/NoirPro-Webfont/NoirPro-Regular.woff2'
@@ -17,6 +19,8 @@ export {
     LogoCITi,
     rightArrow,
     contactBackground,
+    menuIcon,
+    closeMenuIcon,
     NoirProSemiBoldItalicWoff,
     NoirProSemiBoldItalicWoff2,
     NoirProLightWoff,
