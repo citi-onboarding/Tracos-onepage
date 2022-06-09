@@ -198,7 +198,6 @@ export const ContactDiv = styled.div`
                 margin: 12px 0;
             }
 
-
             button { 
                 margin-top: 12px;
             }
