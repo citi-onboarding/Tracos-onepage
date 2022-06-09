@@ -180,10 +180,12 @@ export const ContactDiv = styled.div`
             height: 420px;
 
             strong {
-                font-size: 32px;
+                font-size: 2.1rem;
                 line-height: 38px;
                 
-                margin-left: 5px; 
+                display: flex;
+                width: 100%;
+                justify-content: center;
             }
 
             .singleLine {
@@ -200,6 +202,10 @@ export const ContactDiv = styled.div`
 
             button { 
                 margin-top: 12px;
+                width: 73px;
+
+                font-size: 16px;
+                line-height: 19px;
             }
 
             input, button, select {

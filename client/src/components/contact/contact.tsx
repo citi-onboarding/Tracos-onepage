@@ -37,7 +37,7 @@ const Contact: React.FC = () => {
                     $('form').submit()
                 }} 
                 >
-                    <strong>Fale com <span>a gente</span></strong>
+                    <strong><div>Fale com <span>a gente</span></div></strong>
                     
                     <input type="text" name="name" id="name" placeholder="Nome" required onChange={e => {name = e.target.value}}/>
                     
