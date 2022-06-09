@@ -2,6 +2,8 @@ import { Request, Response } from 'express';
 import { Contact } from '@models/Contact';
 import { Citi, Crud } from '../global'
 
+import sendMail from '../services/nodemailer'
+
 export default class ContactController implements Crud {
 
     async create(request: Request, response: Response) {
@@ -13,6 +15,7 @@ export default class ContactController implements Crud {
         const newContact = { email, name, description, referrer, phone };
         const { httpStatus, message } = await Citi.insertIntoDatabase(Contact, newContact);
 
+        sendMail(name, email, phone, referrer, description);
         return response.status(httpStatus).send({ message });
     }
 
