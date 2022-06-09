@@ -84,7 +84,9 @@ export const Artists = styled.div`
     transform: scaleX(-1);
   }
 
-  @media(max-width: 480px) {
+  @media(max-width: 1000px) {
+    margin-top:60px;
+    margin-bottom:60px;
     min-width:278px;
     max-height: 608px;
     grid-template-columns: 1fr 278px 1fr;
@@ -151,7 +153,7 @@ export const Text = styled.div`
     margin-bottom:-60px;
   }
 
-  @media(max-width:480px) {
+  @media(max-width:1000px) {
     grid-row: 3/3;
     grid-column: 2/2;
     max-width:234px;
