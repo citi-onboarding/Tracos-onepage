@@ -8,6 +8,8 @@ export const Back = styled.div`
     display: flex;
     justify-content: space-around;
     
+    margin-top: 90px;
+
     background: #0B0B0B;
 
     @font-face {
@@ -60,10 +62,9 @@ export const Texts = styled.div`
     height: 60vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;    
 
     h1 {
-
         height: fit-content;
 
         font-family: 'Noir Pro SemiBold';
@@ -75,15 +76,16 @@ export const Texts = styled.div`
         color: #FFFFFF;
 
         @media screen and (max-width: 1000px){
+
             font-size: 44px;
             height: fit-content;
             line-height: 53px;
         
         }
-
     }
 
-    p {
+
+    div.about {
 
         height: fit-content;
         width: 30vh;
@@ -119,19 +121,20 @@ export const IntroductionStyled = styled.div`
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 85vh;
+    height: 88vh;
     background: #0B0B0B;
 
     video{
+        width: 935px;
+        height: 526px;
 
-    width: 935px;
-    height: 526px;
+        margin-top: -50px;
     }
 
     @media screen and (max-width: 1000px){
 
         width: 100%;
-        height: 30vh;
+        height: 42vh;
 
         video{
 

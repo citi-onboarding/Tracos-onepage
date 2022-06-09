@@ -36,7 +36,6 @@ const StyledNavbar = styled.nav`
 
     .content {
         width: 82vw;
-        max-width: 1126px;
         height: 90px;
 
         display: flex;
@@ -120,7 +119,7 @@ const MobileNavbar = styled.nav`
     justify-self: end;
 
     width: 100vw;
-    height: 110px;
+    height: 90px;
     background-color: #0B0B0B;
 
     padding: 2rem;

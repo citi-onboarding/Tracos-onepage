@@ -1,14 +1,15 @@
 const nodemailer = require('nodemailer');
-const SMTP_CONFIG = require('../config/smtp');
-const dotenv = require('../.env');
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,
     secure: false,
     auth: {
-        user: dotenv.EMAIL,
-        pass: dotenv.PASSWORD
+        user: process.env.EMAIL,
+        pass: process.env.PASSWORD
     },
     tls: {
         rejectUnauthorized: false
@@ -27,7 +28,7 @@ Mensagem: "${description}"`
     const messageSent = (await transporter.sendMail({
         text: message,
         subject: subject,
-        to: [dotenv.EMAIL_WILL_RECEIVE]
+        to: [process.env.EMAIL_WILL_RECEIVE]
     }));
 }
 

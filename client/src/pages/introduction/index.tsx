@@ -25,7 +25,6 @@ export const Introduction: React.FC = () => {
     const getInfos = async () => {
         const response = await api.get('/introduction');
         setInfos(response.data);
-        console.log(response.data);
     }
 
     useEffect (() => {
@@ -37,7 +36,7 @@ export const Introduction: React.FC = () => {
             <Back>
                 <Texts>
                     <h1>Encontre <i>o seu</i><br></br> melhor traço</h1>
-                    <p>
+                    <div className='about'>
                         Saiba mais
                         <a href={infos&&infos[0].link} >
                             <SetaStyled>
@@ -47,7 +46,7 @@ export const Introduction: React.FC = () => {
                             <img src={Seta2} alt="seta2" />
                             </SetaStyled2>
                         </a>
-                    </p>
+                    </div>
                 </Texts>
                 <Image>
                     <img src={infos&&infos[0].image} alt="iphone" />
