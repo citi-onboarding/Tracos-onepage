@@ -7,6 +7,7 @@ import { TattooistsAdvantages } from "../../components";
 import { Tattooists } from '../../components';
 import { ContainerTattooedPeopleAdvantages } from "../../components";
 import { TattooedPeopleAdvantagesTitle } from "../../components";
+import { Contact } from "../../components";
 const $ = require( "jquery" );
 
 export const Home: React.FC = () => {
@@ -18,8 +19,8 @@ export const Home: React.FC = () => {
             <Tattooists />
             <TattooedPeopleAdvantagesTitle/>
             <ContainerTattooedPeopleAdvantages/>
+            <Contact/>
             <Footer/>
-            
         </HomeContainer>
     );
 }

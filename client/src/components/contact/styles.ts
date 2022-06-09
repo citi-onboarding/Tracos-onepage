@@ -166,4 +166,67 @@ export const ContactDiv = styled.div`
         input[type=number] {
             -moz-appearance:textfield; /* Firefox */
         }  
+    }
+
+    @media (max-width: 1000px) {
+        width: 83.5vw;
+        height: 495px;
+        
+        background-position: center;
+        background-size: cover;
+
+        form { 
+            width: 67vw;
+            height: 420px;
+
+            strong {
+                font-size: 2.1rem;
+                line-height: 38px;
+                
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .singleLine {
+                flex-direction: column;
+
+                input { 
+                    width: 100%;
+                }
+            }
+
+            input, select { 
+                margin: 12px 0;
+            }
+
+            button { 
+                margin-top: 12px;
+                width: 73px;
+
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            input, button, select {
+                font-size: 16px;
+                line-height: 18px;
+            }
+
+            ::placeholder {
+                font-size: 15px;
+                line-height: 18px;
+            }
+
+            :-ms-input-placeholder {
+                font-size: 15px;
+                line-height: 18px;
+            }
+
+            ::-ms-input-placeholder {
+                font-size: 15px;
+                line-height: 18px;
+            }
+        }
+    }
 `;
