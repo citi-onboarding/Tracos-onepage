@@ -4,7 +4,7 @@ import { Navbar } from '../../components';
 const $ = require( "jquery" );
 
 // 'Oioi' is bringing the navbar together in the margin... why?
-const Home: React.FC = () => {
+const NavbarTRS: React.FC = () => {
     return (
         <div>
             <Navbar/>
@@ -35,4 +35,4 @@ $(window).scroll(() => {
     
 })
 
-export { Home };
+export { NavbarTRS };

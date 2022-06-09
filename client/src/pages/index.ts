@@ -1,11 +1,7 @@
-import { Home } from './home/navbar';
+import { Home } from './home';
 import { Introduction } from './introduction';
 import { Footer } from '../components/Footer';
 
-
 export {
-    Home,
-    Introduction,
-    Footer
+    Home
 }
-
