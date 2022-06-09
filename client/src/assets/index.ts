@@ -12,6 +12,9 @@ import TwitterIcon from './Twitter.svg'
 import CitiIcon from './CITi.svg'
 import AppleIcon from './Apple_logo_grey 1.png'
 import PlayStoreIcon from './playstore.svg'
+import Foto1 from './Ilustração=One.svg';
+import Foto2 from './Ilustração=Two.svg';
+import Foto3 from './Ilustração=Three.svg';
 
 import NoirProSemiBoldWoff from './noir-pro/NoirPro-Webfont/NoirPro-SemiBold.woff';
 import NoirProSemiBoldWoff2 from './noir-pro/NoirPro-Webfont/NoirPro-SemiBold.woff2';
@@ -21,6 +24,8 @@ import NoirProLightWoff from './noir-pro/NoirPro-Webfont/NoirPro-Light.woff';
 import NoirProLightWoff2 from './noir-pro/NoirPro-Webfont/NoirPro-Light.woff2';
 import NoirProMediumWoff from './noir-pro/NoirPro-Webfont/NoirPro-Medium.woff'
 import NoirProMediumWoff2 from './noir-pro/NoirPro-Webfont/NoirPro-Medium.woff2'
+import NoirProMediumItalicWoff2 from './noir-pro/NoirPro-Webfont/NoirPro-MediumItalic.woff2';
+import NoirProMediumItalicWoff from './noir-pro/NoirPro-Webfont/NoirPro-MediumItalic.woff';
 import NoirProRegularItalicWoff from './noir-pro/NoirPro-Webfont/NoirPro-Italic.woff'
 import NoirProRegularItalicWoff2 from './noir-pro/NoirPro-Webfont/NoirPro-Italic.woff2'
 import NoirProSemiBoldItalicWoff from './noir-pro/NoirPro-Webfont/NoirPro-SemiBoldItalic.woff'
@@ -41,6 +46,9 @@ export {
     menuIcon,
     closeMenuIcon,
     CitiIcon,
+    Foto1,
+    Foto2,
+    Foto3,
     Heart,
     InstagramIcon,
     TwitterIcon,
@@ -58,10 +66,13 @@ export {
     NoirProLightWoff2,
     NoirProMediumWoff,
     NoirProMediumWoff2,
+    NoirProMediumItalicWoff2,
+    NoirProMediumItalicWoff,
     NoirProItalicWoff,
     NoirProItalicWoff2,
     NoirProLightRegularWoff,
     NoirProLightRegularWoff2,
     Video,
 };
+
 

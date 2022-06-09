@@ -2,7 +2,8 @@ import React from "react";
 import { HomeContainer } from './styles';
 import { Footer } from "../../components/Footer";
 import { Navbar } from "../../components";
-import { Introduction } from "../introduction";
+import { Introduction } from "../../components/introduction";
+import { TattooistsAdvantages } from "../../components";
 const $ = require( "jquery" );
 
 export const Home: React.FC = () => {
@@ -10,6 +11,7 @@ export const Home: React.FC = () => {
         <HomeContainer>
             <Navbar/>
             <Introduction/>
+            <TattooistsAdvantages/>
             <Footer/>
         </HomeContainer>
     );
