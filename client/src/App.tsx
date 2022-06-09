@@ -8,8 +8,7 @@ import { Home } from './pages';
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Home/>
-      <GlobalStyle/>
+      <Home />
     </ThemeProvider>
   );
 }

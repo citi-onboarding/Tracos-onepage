@@ -15,6 +15,7 @@ import PlayStoreIcon from './playstore.svg'
 import Foto1 from './Ilustração=One.svg';
 import Foto2 from './Ilustração=Two.svg';
 import Foto3 from './Ilustração=Three.svg';
+import Arrow from './arrow.svg';
 
 import NoirProSemiBoldWoff from './noir-pro/NoirPro-Webfont/NoirPro-SemiBold.woff';
 import NoirProSemiBoldWoff2 from './noir-pro/NoirPro-Webfont/NoirPro-SemiBold.woff2';
@@ -37,6 +38,7 @@ import NoirProItalicWoff2 from './noir-pro/NoirPro-Webfont/NoirPro-Italic.woff2'
 import Video from './tatuadores.mp4';
 
 export {
+    Arrow,
     LogoCITi,
     IPhone,
     Seta,
@@ -74,5 +76,3 @@ export {
     NoirProLightRegularWoff2,
     Video,
 };
-
-

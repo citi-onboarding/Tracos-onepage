@@ -4,6 +4,7 @@ import { Footer } from "../../components/Footer";
 import { Navbar } from "../../components";
 import { Introduction } from "../../components/introduction";
 import { TattooistsAdvantages } from "../../components";
+import { Tattooists } from '../../components';
 const $ = require( "jquery" );
 
 export const Home: React.FC = () => {
@@ -12,6 +13,7 @@ export const Home: React.FC = () => {
             <Navbar/>
             <Introduction/>
             <TattooistsAdvantages/>
+            <Tattooists />
             <Footer/>
         </HomeContainer>
     );
