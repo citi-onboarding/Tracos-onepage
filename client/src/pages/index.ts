@@ -1,4 +1,4 @@
-import { Home } from './home/navbar';
+import { Home } from './home';
 
 export {
     Home
