@@ -9,6 +9,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Home />
+      <GlobalStyle/>
     </ThemeProvider>
   );
 }

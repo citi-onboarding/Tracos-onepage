@@ -16,6 +16,9 @@ import Foto1 from './Ilustração=One.svg';
 import Foto2 from './Ilustração=Two.svg';
 import Foto3 from './Ilustração=Three.svg';
 import Arrow from './arrow.svg';
+import ImageAdvantage1 from './Imagem de Vantagem.svg';
+import ImageAdvantage2 from './Imagem de Vantagem (1).svg';
+import ImageAdvantage3 from './Imagem de Vantagem (2).svg';
 
 import NoirProSemiBoldWoff from './noir-pro/NoirPro-Webfont/NoirPro-SemiBold.woff';
 import NoirProSemiBoldWoff2 from './noir-pro/NoirPro-Webfont/NoirPro-SemiBold.woff2';
@@ -52,6 +55,9 @@ export {
     Foto2,
     Foto3,
     Heart,
+    ImageAdvantage1,
+    ImageAdvantage2,
+    ImageAdvantage3,
     InstagramIcon,
     TwitterIcon,
     PlayStoreIcon,
