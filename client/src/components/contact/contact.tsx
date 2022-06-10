@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactDiv } from './styles';
+import { ContactDiv, Center } from './styles';
 import { rightArrow } from '../../assets'
 import api from '../../services/api';
 const $ = require('jquery')
@@ -28,6 +28,7 @@ async function postMessage(name: string, email: string, phone: string, referrer:
 
 const Contact: React.FC = () => {
     return (
+        <Center>
             <ContactDiv id="contact">
                 <form 
                 action="/contact"
@@ -65,6 +66,7 @@ const Contact: React.FC = () => {
                     </button>
                 </form>
             </ContactDiv>
+        </Center>
     );
 }
 

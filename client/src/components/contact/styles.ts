@@ -2,6 +2,13 @@ import styled from 'styled-components';
 import { contactBackground, NoirProLightWoff, NoirProLightWoff2, NoirProRegularWoff, NoirProRegularWoff2, NoirProMediumWoff, NoirProMediumWoff2, NoirProRegularItalicWoff, NoirProRegularItalicWoff2 } from '../../assets';
 
 // o strong span tá vermelho p lembrar de corrigir -> mudar pra regular e regular italiccc
+export const Center = styled.div`
+    display:flex;
+    justify-content:center;
+    width: 100vw;
+    margin: 0px;
+`
+
 export const ContactDiv = styled.div`
     
     @font-face {
@@ -31,7 +38,9 @@ export const ContactDiv = styled.div`
     width: 68.5vw;
     max-width: 935px;
     height: 469px;
-
+    margin-bottom:-235px;
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,9 +180,11 @@ export const ContactDiv = styled.div`
     @media (max-width: 1000px) {
         width: 83.5vw;
         height: 495px;
+        margin-bottom:-110px;
         
         background-position: center;
         background-size: cover;
+
 
         form { 
             width: 67vw;

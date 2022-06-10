@@ -35,7 +35,7 @@ export const Introduction: React.FC = () => {
         <IntroductionStyled>
             <Back>
                 <Texts>
-                    <h1>Encontre <i>o seu</i><br></br> melhor traço</h1>
+                    <h1>Encontre <span>o seu</span><br></br> melhor traço</h1>
                     <div className='about'>
                         Saiba mais
                         <a href={infos&&infos[0].link} >

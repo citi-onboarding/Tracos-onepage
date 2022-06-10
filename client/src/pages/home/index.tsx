@@ -8,7 +8,8 @@ import { Tattooists } from '../../components';
 import { ContainerTattooedPeopleAdvantages } from "../../components";
 import { TattooedPeopleAdvantagesTitle } from "../../components";
 import { Contact } from "../../components";
-const $ = require( "jquery" );
+
+const tattooistsContainer = <div id='tattooists'><Tattooists/></div>
 
 export const Home: React.FC = () => {
     return (
@@ -16,7 +17,7 @@ export const Home: React.FC = () => {
             <Navbar/>
             <Introduction/>
             <TattooistsAdvantages/>
-            <Tattooists />
+            {tattooistsContainer}
             <TattooedPeopleAdvantagesTitle/>
             <ContainerTattooedPeopleAdvantages/>
             <Contact/>
@@ -24,20 +25,3 @@ export const Home: React.FC = () => {
         </HomeContainer>
     );
 }
-
-$(window).scroll(() => {
-    let scrollTop = $(window).scrollTop();
-
-    let divs = ['#homeContainer']
-
-    divs.forEach(div => {
-        let divTop = $(div).offset().top;
-        let divStart;
-        if (divTop - $(window).height() > 0) { divStart = divTop - $(window).height() } else { divStart = divTop };
-        let divEnd = divTop + $(div).height();
-    
-        if  (scrollTop > divStart && scrollTop < divEnd) {
-            console.log(`estou em ${div}`) // if div == introduction -> 'início' goes bold (and so it goes...)
-        } // WORKSSSSSSSSSSS
-    })
-});

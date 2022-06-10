@@ -1,12 +1,13 @@
 import styled from 'styled-components';
-import { NoirProSemiBoldWoff, NoirProSemiBoldWoff2, NoirProRegularWoff, NoirProRegularWoff2, NoirProLightWoff, NoirProLightWoff2 } from '../../assets/index'
+import { NoirProSemiBoldWoff, NoirProSemiBoldWoff2, NoirProRegularWoff, NoirProRegularWoff2, NoirProLightWoff, NoirProLightWoff2, NoirProSemiBoldItalicWoff2, NoirProSemiBoldItalicWoff } from '../../assets/index'
 
 export const Back = styled.div`
 
-    width: 100%;
+    width: 82vw;
+    max-width: 1250px;
     height: 70vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     
     margin-top: 90px;
 
@@ -16,6 +17,12 @@ export const Back = styled.div`
     font-family: 'Noir Pro SemiBold';
     src: url(${NoirProSemiBoldWoff}) format('woff'),
          url(${NoirProSemiBoldWoff2}) format('woff2'); 
+    }
+
+    @font-face {
+    font-family: 'Noir Pro SemiBold Italic';
+    src: url(${NoirProSemiBoldItalicWoff}) format('woff'),
+         url(${NoirProSemiBoldItalicWoff2}) format('woff2'); 
     }
 
     @font-face {
@@ -33,6 +40,7 @@ export const Back = styled.div`
     @media screen and (max-width: 1000px){
         width: 100%;
         height: 30vh;
+        padding: 0 2rem;
         
     }
 
@@ -84,6 +92,10 @@ export const Texts = styled.div`
         }
     }
 
+    span {
+        font-family: 'Noir Pro SemiBold Italic';
+    }
+
 
     div.about {
 
@@ -127,6 +139,7 @@ export const IntroductionStyled = styled.div`
     video{
         width: 935px;
         height: 526px;
+        z-index: 1;
 
         margin-top: -50px;
     }
@@ -181,4 +194,3 @@ export const SetaStyled2 = styled.div`
     }
     
 `;
-

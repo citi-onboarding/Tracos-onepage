@@ -9,7 +9,7 @@ export const Title = styled.h1`
     color: #000;
     font-size: 55px;
     font-family: 'Noir Pro Regular';
-    margin-top: 139px; 
+    margin-bottom: 67px;
     span {
         font-family: 'Noir Pro Italic';
     }
@@ -37,13 +37,11 @@ export const Card = styled.div`
     height: 350px;  
     border: 1px solid #0B0B0B;
     padding: 15px 0 0 32px;
-    transition: 1s;
     font-family: 'Barlow';
 
     img{
         width: 265px;
         height: 142px;
-        transition: 1s;
     }
     
     :hover {
@@ -86,13 +84,11 @@ export const CardTitle = styled.h1`
     display: flex;
     align-items: center;
     gap: 10px;
-    transition: 1s;
 `;
 
 export const CardText = styled.p`
     font-size: 14px;
     color: ${themeTRS.colors.text};
-    transition: 1s;
     @media (max-width: 1000px){
         font-size: 11.38px;
     }
@@ -102,7 +98,6 @@ export const Line = styled.span`
     width: 24px;
     height: 1.1px;
     background-color: #000;
-    transition: 1s;
 `;
 
 

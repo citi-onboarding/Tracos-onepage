@@ -22,7 +22,6 @@ export const Title = styled.div`
     @media screen and (max-width: 1000px){
         font-size: 31px;
         height: fit-content;
-    
     }
 
 `;
@@ -34,10 +33,8 @@ export const Container =  styled.div`
     height: fit-content;
 
     @media screen and (max-width: 1000px){
-        flex-direction: column;
-        align-items: center;
-        height: 78vh;
-        justify-content: space-between;
+        display: grid;
+        gap: 24px;
     }
 
 `;
@@ -52,9 +49,8 @@ export const SectionContainer = styled.div`
     justify-content: space-evenly;
 
     @media screen and (max-width: 1000px){
-        height: calc(8vh + 900px);
+        height: calc(15vh + 900px);
         justify-content: space-evenly;
-
     }
 
 `;

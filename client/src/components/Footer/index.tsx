@@ -1,15 +1,16 @@
-import { 
+import {
     Box, Div,
     Container,
-    Copyright, 
+    Copyright,
     Line,
     Social,
     SocialIcons,
-    Teste
+    Teste,
 } from "./style"
-import { AppleIcon, CitiIcon, Heart, InstagramIcon, PlayStoreIcon, TwitterIcon } from "../../assets" 
+import { AppleIcon, CitiIcon, Heart, InstagramIcon, PlayStoreIcon, TwitterIcon } from "../../assets"
 import api from "../../services/api";
 import { useState, useEffect } from "react";
+import React from "react";
 
 type footerInfos = {
     address: string;
@@ -23,12 +24,12 @@ type footerInfos = {
 export const Footer = () => {
     const [infos, setInfos] = useState<footerInfos[]>();
 
-    const getInfos =async () => {
+    const getInfos = async () => {
         const response = await api.get('/footer');
         setInfos(response.data);
-    }    
+    }
 
-    useEffect (() =>{
+    useEffect(() => {
         getInfos();
     }, [])
 

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { NoirProLightWoff, NoirProLightWoff2, NoirProRegularWoff, NoirProRegularWoff2, NoirProMediumWoff, NoirProMediumWoff2, NoirProSemiBoldItalicWoff, NoirProSemiBoldItalicWoff2 } from '../../assets';
 
 const StyledNavbar = styled.nav`
+    z-index: 2;
     @font-face {
         font-family: 'Noir Pro Light';
         src: url(${NoirProLightWoff}) format('woff'),
@@ -22,9 +23,7 @@ const StyledNavbar = styled.nav`
     
 
     position: fixed;
-
     justify-self: end;
-
     width: 100vw;
     background-color: #0B0B0B;
 
@@ -37,6 +36,7 @@ const StyledNavbar = styled.nav`
     .content {
         width: 82vw;
         height: 90px;
+        max-width: 1250px;
 
         display: flex;
         justify-content: space-between;
@@ -93,9 +93,14 @@ const StyledNavbar = styled.nav`
     @media (max-width: 1000px) {
         display: none;
     }
+
+    .bold-link {
+        font-family: 'Noir Pro Regular' !important;
+    }
 `;
 
 const MobileNavbar = styled.nav`    
+
     @font-face {
         font-family: 'Noir Pro Light';
         src: url(${NoirProLightWoff}) format('woff'),
@@ -117,7 +122,7 @@ const MobileNavbar = styled.nav`
     position: fixed;
 
     justify-self: end;
-
+    z-index: 2;
     width: 100vw;
     height: 90px;
     background-color: #0B0B0B;
@@ -136,7 +141,7 @@ const MobileNavbar = styled.nav`
     }
 
     .menuIcon {
-        z-index: 3;
+        z-index: 5;
         cursor: pointer;
     }
 
@@ -182,7 +187,7 @@ const MobileNavbar = styled.nav`
             display: flex;
             flex-direction: column;
 
-            z-index: 2;
+            z-index: 4;
             position: absolute;
 
             align-items: center;
@@ -210,6 +215,10 @@ const MobileNavbar = styled.nav`
                 height: 26px;
             }
         }
+    }
+
+    .bold-link {
+        font-family: 'Noir Pro Regular' !important;
     }
 `;
 
