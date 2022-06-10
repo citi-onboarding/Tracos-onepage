@@ -47,10 +47,11 @@ export const SectionContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-
+    margin-top: 500px;
     @media screen and (max-width: 1000px){
         height: calc(15vh + 900px);
         justify-content: space-evenly;
+        margin-top: 150px;
     }
 
 `;

@@ -13,6 +13,7 @@ export const themeTRS = {
     line: '#BBBBBB',
     background: '#FFF',
     backgroundHover: '#0B0B0B',
+    textBlack: '#0B0B0B',
     textHover: '#fff',
     titleCard: '#0B0B0B',
     title: '#000',

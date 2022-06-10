@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import api from "../../services/api";
 import { Card } from "../Card";
-import { Title, Container, SectionContainer } from './styles';
+import { Title, Container, SectionContainer} from './styles';
 
 type tattooistsAdvantages = {
     title: string;

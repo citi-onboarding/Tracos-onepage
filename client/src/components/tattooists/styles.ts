@@ -40,7 +40,7 @@ export const Artists = styled.div`
 
   #nameAux {
     position: relative;
-    top: -56px;
+    top: -36px;
     margin: 0px;
   }
 
@@ -130,6 +130,7 @@ export const Text = styled.div`
     font-style: normal;
     font-weight: 100;
     font-size: 28px;
+    color:black;
   }
 
   p {
@@ -149,7 +150,7 @@ export const Text = styled.div`
 
   #descriptionAux {
     position:relative;
-    top:-82px;
+    top:-46px;
     margin-bottom:-60px;
   }
 

@@ -153,6 +153,7 @@ export const IntroductionStyled = styled.div`
 
             width: 326px;
             height: 183.4px;
+            margin-top: 0px;
         }
 
 
