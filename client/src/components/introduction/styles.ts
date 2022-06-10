@@ -41,7 +41,6 @@ export const Back = styled.div`
         width: 100%;
         height: 30vh;
         padding: 0 2rem;
-        
     }
 
 
@@ -148,17 +147,26 @@ export const IntroductionStyled = styled.div`
 
         width: 100%;
         height: 42vh;
-
+        margin-bottom: 15%;
         video{
-
-            width: 326px;
-            height: 183.4px;
+            max-width: 526px;
+            width: 80%;
+            //height: 60%;
             margin-top: 0px;
+            
         }
 
 
     }
-
+    @media (max-width: 347px) {
+        margin-bottom: 0%; 
+       h1 {
+        font-size: 28px;
+       }
+       video {
+        width: 80%;
+       }
+    }
 `;
 
 export const SetaStyled = styled.div`

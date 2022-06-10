@@ -40,7 +40,7 @@ export const Artists = styled.div`
 
   #nameAux {
     position: relative;
-    top: -36px;
+    top: -33px;
     margin: 0px;
   }
 
@@ -93,6 +93,7 @@ export const Artists = styled.div`
     grid-template-rows: 42px 283px 210px 13px;
     justify-items:center;
     row-gap:20px;
+    column-gap:0px;
 
     .tattooist {
       max-width:234px;
@@ -115,6 +116,8 @@ export const Artists = styled.div`
 
   }
 
+   @media(max-width: 1000px)
+
 `;
 
 export const Text = styled.div`
@@ -122,7 +125,7 @@ export const Text = styled.div`
   grid-column: 3/3;
 
   #name {
-    padding-top:2em;
+    padding-top:2.5em;
   }
 
   h2 {
@@ -135,7 +138,7 @@ export const Text = styled.div`
 
   p {
     transition: opacity 0.3s linear;
-    margin-top: -46px;
+    margin-top: -25px;
     font-family: "Barlow", sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -150,7 +153,7 @@ export const Text = styled.div`
 
   #descriptionAux {
     position:relative;
-    top:-46px;
+    top:-67px;
     margin-bottom:-60px;
   }
 
@@ -164,7 +167,7 @@ export const Text = styled.div`
     }
 
     #nameAux {
-      top:-49px;
+      top:-29px;
     }
 
     h2 {
@@ -182,7 +185,7 @@ export const Text = styled.div`
 
     #descriptionAux {
       height:162px;
-      top:-131px;
+      top:-122px;
     }
   }
 

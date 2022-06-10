@@ -88,6 +88,7 @@ export const CardTitle = styled.h1`
 
 export const CardText = styled.p`
     font-size: 14px;
+    font-weight: 300;
     color: ${themeTRS.colors.textBlack};
     @media (max-width: 1000px){
         font-size: 11.38px;

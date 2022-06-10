@@ -15,7 +15,6 @@ export const TattooistsAdvantages: React.FC = () =>{
     const getInfos = async () => {
         const response = await api.get('/tattooArtistsAdvantages');
         setInfos(response.data);
-        console.log(response.data);
     }
 
     useEffect (() => {

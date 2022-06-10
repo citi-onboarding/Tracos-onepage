@@ -29,7 +29,7 @@ export const Title = styled.div`
 export const Container =  styled.div`
     display: flex;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
 
     @media screen and (max-width: 1000px){
@@ -40,7 +40,7 @@ export const Container =  styled.div`
 `;
 
 export const SectionContainer = styled.div`
-    width: 100vw;
+    width: 100%;
     height: calc(10vh + 350px + 160px);
     border-top: 1px solid #0B0B0B;
     display: flex;

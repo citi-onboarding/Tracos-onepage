@@ -5,7 +5,7 @@ import {
     Line,
     Social,
     SocialIcons,
-    Teste,
+    Address,
 } from "./style"
 import { AppleIcon, CitiIcon, Heart, InstagramIcon, PlayStoreIcon, TwitterIcon } from "../../assets"
 import api from "../../services/api";
@@ -37,10 +37,10 @@ export const Footer = () => {
         <Container>
             <Div>
                 <Box>
-                    <Teste>
+                    <Address>
                         <p>{infos&&infos[0].address}</p>
                         <p>{infos&&infos[0].phone}</p>
-                    </Teste>
+                    </Address>
                     <h1>TRS</h1>
                     <Social>
                         <p>Onde nos encontrar</p>

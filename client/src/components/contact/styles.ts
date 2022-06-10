@@ -5,7 +5,7 @@ import { contactBackground, NoirProLightWoff, NoirProLightWoff2, NoirProRegularW
 export const Center = styled.div`
     display:flex;
     justify-content:center;
-    width: 100vw;
+    width: 100%;
     margin: 0px;
 `
 

@@ -66,6 +66,12 @@ export const Box = styled.div`
             bottom: 20%;
         }
     }
+    @media (max-width: 347px){
+        width: 95%;
+        position: relative;
+        left: 5%;
+        font-size: 11px;
+    }
 `;
 
 export const Social = styled.div`
@@ -87,6 +93,11 @@ export const Social = styled.div`
         p {
             font-size: 15px;
         }
+    }
+    @media (max-width: 347px){
+        position: relative;
+        left: 10%;
+        font-size: 11px;
     }
 `;
 
@@ -143,7 +154,7 @@ export const Copyright = styled.div`
     }
 `;
 
-export const Teste = styled.div`
+export const Address = styled.div`
     width: 270px;
     height: 69px;
     margin-left: 120px;
@@ -153,10 +164,14 @@ export const Teste = styled.div`
     }
     @media (max-width: 1000px){
         margin: 0;
-        width: 330px;
+        width: 100%;
+        max-width: 330px;
         order: 2;
         p {
             font-size: 15px;
         }
+    }
+    @media (max-width: 347px) {
+        width: 80%;
     }
 `;

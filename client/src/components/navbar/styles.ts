@@ -24,7 +24,7 @@ const StyledNavbar = styled.nav`
 
     position: fixed;
     justify-self: end;
-    width: 100vw;
+    width: 100%;
     background-color: #0B0B0B;
 
     display: flex;
