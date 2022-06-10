@@ -115,9 +115,6 @@ export const Artists = styled.div`
     }
 
   }
-
-   @media(max-width: 1000px)
-
 `;
 
 export const Text = styled.div`
