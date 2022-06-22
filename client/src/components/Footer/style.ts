@@ -138,6 +138,12 @@ export const Copyright = styled.div`
         width: 24px;
         height: 14px;
     }
+    a:link {
+        text-decoration: none;
+    }
+    a {
+        color: ${themeTRS.colors.text};
+    }
     @media (max-width: 1000px) {
         flex-direction: column;
         margin-bottom: 3%;
@@ -151,6 +157,19 @@ export const Copyright = styled.div`
                 margin-left: 4px;
             }
         }
+    }
+`;
+
+export const LinkPrivacy = styled.a`
+    @media (max-width: 1000px) {
+        display: none;
+    }
+`;
+
+export const Privacy = styled.p `
+    display: none;
+    @media (max-width: 1000px) {
+        display: block;
     }
 `;
 
