@@ -58,9 +58,9 @@ export const Footer = () => {
                 <Line></Line>
                 <Copyright>
                     <p>© Copyright 2022 Traços | Todos os direitos reservados 
-                        <LinkPrivacy href= {infos&&infos[0].linkPrivacy} target="_blank"> | Políticas de privacidade </LinkPrivacy>
+                        <LinkPrivacy href= {infos&&infos[0].linkPrivacy} target="_blank"> | Política de privacidade </LinkPrivacy>
                     </p>
-                    <Privacy><a href= {infos&&infos[0].linkPrivacy} target="_blank"> Políticas de privacidade </a></Privacy>
+                    <Privacy><a href= {infos&&infos[0].linkPrivacy} target="_blank"> Política de privacidade </a></Privacy>
                     <p>Made with &lt; / &gt; and <img src={Heart} alt="heart icon"/> by <img src={CitiIcon} alt="Citi icon"/></p>
                 </Copyright>
             </Div>
