@@ -57,15 +57,19 @@ export const Card = styled.div`
         background-color: ${themeTRS.colors.textHover};
     }
     :hover img{
-        filter: invert(1);
+        //filter: invert(1);
     }
 
     @media (max-width: 1000px){
         width: 234px;
         height: 249px;
+        padding: 15px 0 0 23px;
         img{
             width: 188.53px;
             height: 101.02px;
+        }
+        p {
+            width: 188.53px;
         }
     }
 `;
