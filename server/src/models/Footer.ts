@@ -24,4 +24,6 @@ export class Footer{
     @Column()
     linkTwitter: string
 
+    @Column()
+    linkPrivacy: string
 }

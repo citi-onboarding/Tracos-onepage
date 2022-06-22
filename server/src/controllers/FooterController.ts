@@ -5,12 +5,12 @@ import { Citi, Crud } from '../global'
 export default class FooterController implements Crud{
 
     async create(request: Request, response: Response){
-        const {phone, address, linkAppleStore, linkGooglePlay, linkInstagram, linkTwitter} = request.body;
+        const {phone, address, linkAppleStore, linkGooglePlay, linkInstagram, linkTwitter, linkPrivacy} = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(phone, address, linkAppleStore, linkGooglePlay, linkInstagram, linkTwitter);
+        const isAnyUndefined = Citi.areValuesUndefined(phone, address, linkAppleStore, linkGooglePlay, linkInstagram, linkTwitter, linkPrivacy);
         if(isAnyUndefined) return response.status(400).send();
 
-        const newFooter = { phone, address, linkAppleStore, linkGooglePlay, linkInstagram, linkTwitter };
+        const newFooter = { phone, address, linkAppleStore, linkGooglePlay, linkInstagram, linkTwitter, linkPrivacy };
         const {httpStatus, message} = await Citi.insertIntoDatabase(Footer, newFooter);
 
         return response.status(httpStatus).send({ message });
@@ -23,12 +23,12 @@ export default class FooterController implements Crud{
 
     async update(request: Request, response: Response){ 
         const { id } = request.params;
-        const{phone, address, linkAppleStore, linkGooglePlay, linkPrivacy} = request.body;
+        const{phone, address, linkAppleStore, linkGooglePlay, linkInstagram, linkTwitter, linkPrivacy} = request.body;
 
-        const isAnyUndefined = Citi.areValuesUndefined(phone, address, linkAppleStore, linkGooglePlay, linkPrivacy, id);
+        const isAnyUndefined = Citi.areValuesUndefined(phone, address, linkAppleStore, linkGooglePlay, linkInstagram, linkTwitter, linkPrivacy, id);
         if(isAnyUndefined) return response.status(400).send();
 
-        const footerWithUpdateValues = { phone, address, linkAppleStore, linkGooglePlay, linkPrivacy };
+        const footerWithUpdateValues = { phone, address, linkAppleStore, linkGooglePlay, linkInstagram, linkTwitter, linkPrivacy };
 
         const { httpStatus, messageFromUpdate } = await Citi.updateValue(Footer, id, footerWithUpdateValues);
         return response.status(httpStatus).send({ messageFromUpdate });
