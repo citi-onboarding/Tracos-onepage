@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.js": "/static/js/main.fc6f6565.js",
+    "static/media/tatuadores.mp4": "/static/media/tatuadores.4fcfbe11db23732c737e.mp4",
+    "static/media/contactBackground.png": "/static/media/contactBackground.eefe2bf1db43f56af72e.png",
+    "static/media/Mockup_final.png": "/static/media/Mockup_final.c1e3dd0b4d7fe3a0c362.png",
+    "static/media/NoirPro-SemiBoldItalic.woff": "/static/media/NoirPro-SemiBoldItalic.9b36612ef5f6985ed342.woff",
+    "static/media/NoirPro-MediumItalic.woff": "/static/media/NoirPro-MediumItalic.48bfef03d2e3006b2465.woff",
+    "static/media/NoirPro-SemiBold.woff": "/static/media/NoirPro-SemiBold.f631a80896cbd9d7e6d0.woff",
+    "static/media/NoirPro-Medium.woff": "/static/media/NoirPro-Medium.a4383e1de0be9cecc3a9.woff",
+    "static/media/NoirPro-Italic.woff": "/static/media/NoirPro-Italic.d2ce023b500b6d12e5d6.woff",
+    "static/media/NoirPro-Regular.woff": "/static/media/NoirPro-Regular.437841a05cf5aeac23cf.woff",
+    "static/media/NoirPro-Light.woff": "/static/media/NoirPro-Light.b9cb1c276479d6becaa9.woff",
+    "static/media/NoirPro-SemiBoldItalic.woff2": "/static/media/NoirPro-SemiBoldItalic.db49286d9b996f31df32.woff2",
+    "static/media/NoirPro-MediumItalic.woff2": "/static/media/NoirPro-MediumItalic.0268a0b7f9964c65888b.woff2",
+    "static/media/NoirPro-Medium.woff2": "/static/media/NoirPro-Medium.715c4044240b62271905.woff2",
+    "static/media/NoirPro-SemiBold.woff2": "/static/media/NoirPro-SemiBold.94659a7975b2fd17e172.woff2",
+    "static/media/NoirPro-Italic.woff2": "/static/media/NoirPro-Italic.2610e980da964bdef0ef.woff2",
+    "static/media/NoirPro-Regular.woff2": "/static/media/NoirPro-Regular.38a6e5bf9d8b42f7bba4.woff2",
+    "static/media/NoirPro-Light.woff2": "/static/media/NoirPro-Light.d145a87508cf9d3a23cf.woff2",
+    "static/media/CITi.svg": "/static/media/CITi.75abda6f2031dd56780e3a743b4827d1.svg",
+    "static/media/Ilustração=Three.svg": "/static/media/Ilustração=Three.ebfde396e31899ccd78db5679983c291.svg",
+    "static/media/Ilustração=One.svg": "/static/media/Ilustração=One.c5bc0a1d1acd9d5cc4461dca74e68f56.svg",
+    "static/media/playstore.svg": "/static/media/playstore.dfe4ea6cc27cc644d76333df3e691d9d.svg",
+    "static/media/Imagem de Vantagem.svg": "/static/media/Imagem de Vantagem.c5f54bdacbd92265cf670e3b15c28d5a.svg",
+    "static/media/Twitter.svg": "/static/media/Twitter.f7a422bb0b73e68a75844cdffeceaf85.svg",
+    "static/media/Imagem de Vantagem (1).svg": "/static/media/Imagem de Vantagem (1).0a827cc2f543c33787dd07e7689359f2.svg",
+    "static/media/Heart.svg": "/static/media/Heart.cdf5afffc7e328fb99d96e8446c04e52.svg",
+    "static/media/Instagram.svg": "/static/media/Instagram.bcef16f7d3c83ac52849f714cf459534.svg",
+    "index.html": "/index.html",
+    "static/media/Ilustração=Two.svg": "/static/media/Ilustração=Two.005c2dbbaf932d71a6575b1baf82b6ae.svg",
+    "static/media/menuIcon.svg": "/static/media/menuIcon.35cff85967664619e5cab90f206c0131.svg",
+    "static/media/Imagem de Vantagem (2).svg": "/static/media/Imagem de Vantagem (2).41d18d619b872c6ecdc6521992827694.svg",
+    "static/media/arrow.svg": "/static/media/arrow.9125fc041edb458fe265d8231149131d.svg",
+    "static/media/rightArrow.svg": "/static/media/rightArrow.71d03937b7a15a9b493fb738016e1189.svg",
+    "main.fc6f6565.js.map": "/static/js/main.fc6f6565.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.fc6f6565.js"
+  ]
+}
