@@ -11,6 +11,7 @@ import { Contact } from "../../components";
 
 const tattooistsContainer = <div id='tattooists'><Tattooists/></div>
 
+
 export const Home: React.FC = () => {
     return (
         <HomeContainer>

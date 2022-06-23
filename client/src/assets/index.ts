@@ -42,7 +42,6 @@ import Video from './tatuadores.mp4';
 
 export {
     Arrow,
-    LogoCITi,
     IPhone,
     Seta,
     Seta2,
@@ -82,3 +81,4 @@ export {
     NoirProLightRegularWoff2,
     Video,
 };
+
