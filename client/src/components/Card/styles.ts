@@ -58,18 +58,19 @@ export const Edge = styled.div`
     }
 
     :hover img{
-        filter: invert(1); 
+        //filter: invert(1); 
     }
 
     @media screen and (max-width: 1000px){
         width: 234px;
         height: 248.94px;
-
+        padding: 15px 0 0 23px;
         h1{
             font-size: 15.6514px;
         }
 
         p{
+            width: 188.53px;
             font-size: 11px;
         }
     }

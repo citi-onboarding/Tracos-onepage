@@ -32,9 +32,18 @@ export const Container =  styled.div`
     width: 100%;
     height: fit-content;
 
+    img {
+        width: 265px;
+        height: 142px;
+    }
+
     @media screen and (max-width: 1000px){
         display: grid;
         gap: 24px;
+        img {
+            width: 188.53px;
+            height: 101.02px;
+        }
     }
 
 `;

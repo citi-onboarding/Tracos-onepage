@@ -6,6 +6,8 @@ import {
     Social,
     SocialIcons,
     Address,
+    LinkPrivacy,
+    Privacy
 } from "./style"
 import { AppleIcon, CitiIcon, Heart, InstagramIcon, PlayStoreIcon, TwitterIcon } from "../../assets"
 import api from "../../services/api";
@@ -17,6 +19,7 @@ type footerInfos = {
     linkAppleStore: string;
     linkGooglePlay: string;
     linkInstagram: string;
+    linkPrivacy: string;
     linkTwitter: string;
     phone: string;
 }
@@ -54,7 +57,10 @@ export const Footer = () => {
                 </Box>
                 <Line></Line>
                 <Copyright>
-                    <p>© Copyright 2022 Traços | Todos os direitos reservados</p>
+                    <p>© Copyright 2022 Traços | Todos os direitos reservados 
+                        <LinkPrivacy href= {infos&&infos[0].linkPrivacy} target="_blank"> | Política de privacidade </LinkPrivacy>
+                    </p>
+                    <Privacy><a href= {infos&&infos[0].linkPrivacy} target="_blank"> Política de privacidade </a></Privacy>
                     <p>Made with &lt; / &gt; and <img src={Heart} alt="heart icon"/> by <img src={CitiIcon} alt="Citi icon"/></p>
                 </Copyright>
             </Div>
